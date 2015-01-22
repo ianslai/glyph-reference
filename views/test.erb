@@ -11,11 +11,9 @@
 </head>
 <body>
 
-<div class="glyph" data-name="past"></div>
-<div class="glyph" data-name="chaos"></div>
-<div class="glyph" data-name="create"></div>
-<div class="glyph" data-name="future"></div>
-<div class="glyph" data-name="harmony"></div>
+<% @glyphs.each do |glyph| %>
+<div class="glyph" data-name="<%= glyph %>"></div>
+<% end %>
 
 </body>
 </html>
