@@ -1,5 +1,3 @@
-require 'sinatra'
-
 
 GLYPHS = %{
   accept
@@ -116,8 +114,3 @@ GLYPHS = %{
   weak
   xm
 }.split.map {|word| word.strip }
-
-get '/' do
-  @glyphs = GLYPHS #[:past, :chaos, :create, :future, :harmony]
-  erb :test
-end

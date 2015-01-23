@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Glyph Reference: <%= @glyph.title %></title>
+    <%= erb :header %>
+  </head>
+  <body>
+
+    <h1><%= @glyph.title %></h1>
+
+    <div class="glyph head" data-name="<%= @glyph.shape %>"></div>
+
+    <% if @glyph.desc %>
+    <p><%= @glyph.desc %>
+    <% end %>
+
+    <% unless @glyph.homographs.empty? %>
+      <p>Homographs:
+      <%= @glyph.homographs.map {|hgraph| ViewUtils.link(hgraph)}.join(',') %>
+    <% end %>
+
+    <% if @glyph.antonym %>
+      <p>Antonym: <%= ViewUtils.link(@glyph.antonym) %>
+    <% end %>
+  </body>
+</html>

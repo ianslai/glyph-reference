@@ -1,19 +1,16 @@
 <html>
 
-<head>
-<link rel="stylesheet" type="text/css" href="lib/css/jquery.svg.css"> 
-<script type="text/javascript" src="lib/js/jquery-1.11.2.js"></script>
-<script type="text/javascript" src="lib/js/jquery.svg.js"></script>
+  <head>
+    <title>Test page containing all glyphs</title>
+    <%= erb :header %>
+  </head>
+  <body>
 
-<link rel="stylesheet" type="text/css" href="css/glyphs.css">
-<script type="text/javascript" src="js/shapes.js"></script>
-<script type="text/javascript" src="js/glyphs.js"></script>
-</head>
-<body>
+    <% @glyphs.each do |glyph| %>
+    <a href="/glyphs/<%= glyph %>">
+    <div class="glyph" data-name="<%= glyph %>"></div>
+    </a>
+    <% end %>
 
-<% @glyphs.each do |glyph| %>
-<div class="glyph" data-name="<%= glyph %>"></div>
-<% end %>
-
-</body>
+  </body>
 </html>
