@@ -16,6 +16,7 @@ GLYPHS = %{
   chaos
   civilization
   clear
+  clear-all
   complex
   conflict
   contemplate
@@ -72,6 +73,7 @@ GLYPHS = %{
   now
   old
   open
+  open-all
   outside
   past
   path
@@ -113,4 +115,4 @@ GLYPHS = %{
   war
   weak
   xm
-}.split.map {|word| word.strip }
+}.split.map {|word| word.strip.to_sym }
