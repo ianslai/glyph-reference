@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Glyph Reference: Alphabetical listing</title>
+    <%= erb :header %>
+  </head>
+  <body>
+
+    <div id="content">
+      <h1>Alphabetical listing of glyphs</h1>
+
+      <div id="alpha">
+        <% @glyphs.each do |glyph| %>
+          <a href="/glyphs/<%= glyph %>" class="glyph-link">
+            <div class="glyph-container">
+              <div class="glyph" data-name="<%= glyph %>"></div><br>
+              <span class="glyph-name"><%= glyph.downcase %></span>
+            </div>
+          </a>
+        <% end %>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -16,4 +16,12 @@ class ViewUtils
     <a href="/shapes/&#35;#{shape}" class="category">#{desc}</a>
     EOL
   end
+
+  def self.large_link(glyph)
+    uri = "/glyphs/#{glyph}"
+    text = glyph.to_s.downcase
+    link = <<-EOL
+    <a href="#{uri}" class="glyph-link"><div class="glyph" data-name="#{glyph}"></div>&nbsp;<span class="glyph-name">#{text}</span></a>
+    EOL
+  end
 end

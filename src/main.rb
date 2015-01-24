@@ -18,6 +18,11 @@ get '/test/?' do
   erb :test
 end
 
+get '/glyphs/?' do
+  @glyphs = GLYPHS.sort
+  erb :alpha
+end
+
 get '/glyphs/:glyph/?' do
   sym = params[:glyph].downcase.to_sym
   puts sym
@@ -30,3 +35,4 @@ get '/shapes/?' do
   @category = Category.new("Glyphs Sorted by Shape", SHAPE_TYPES)
   erb :category
 end
+
