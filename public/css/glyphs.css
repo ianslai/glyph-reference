@@ -10,6 +10,13 @@
     display: inline-block;
 }
 
+.mini-glyph {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 body {
     font-family: 'Roboto Slab', serif;
     font-size: 18;
@@ -17,4 +24,12 @@ body {
 
 .glyph-name {
     font-variant: small-caps;
+}
+
+.category {
+    font-variant: small-caps;
+}
+
+a:link {
+    text-decoration: none;
 }

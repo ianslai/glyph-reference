@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Glyph Reference: <%= @category.title %></title>
+    <%= erb :header %>
+  </head>
+  <body>
+
+    <h1><%= @category.title %></h1>
+
+    <% @category.list.each do |key, name, glyphs| %>
+    <h2 id="<%= key %>"><%= name %></h2>
+      <% glyphs.each do |glyph_line| %>
+        <p>
+        <% glyph_line.each do |glyph| %>
+          <%= ViewUtils.link(glyph) %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+  </body>
+</html>

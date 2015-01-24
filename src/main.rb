@@ -25,3 +25,8 @@ get '/glyphs/:glyph/?' do
   pass unless @glyph
   erb :glyph
 end
+
+get '/shapes/?' do  
+  @category = Category.new("Glyphs Sorted by Shape", SHAPE_TYPES)
+  erb :category
+end

@@ -51,6 +51,31 @@ var GlyphRenderer = function() {
         return results;
     };
 
+    var drawMiniGlyph = function(svg, height, indexes) {
+        var lineWidth = height * 0.07;
+        var outerLineSpacing = lineWidth * 1.5;
+        var padding = outerLineSpacing + lineWidth;
+
+        var outerHexagonPoints = expandPoints(unitPoints, height, lineWidth / 2.0);
+        var points = expandPoints(unitPoints, height, padding);
+
+        var lineSettings = {
+            stroke: '#8080ff',
+            strokeWidth: lineWidth,
+            fill: 'none',
+            strokeLineCap: 'round',
+            strokeLineJoin: 'round'
+        };
+
+        svg.polygon(selectPoints(outerHexagonPoints, [0, 1, 2, 3, 4, 5, 0]), lineSettings);
+
+        if (indexes.length > 1 && indexes[0] == indexes[indexes.length - 1]) {
+            svg.polygon(selectPoints(points, indexes), lineSettings);
+        } else if (indexes.length > 0) {
+            svg.polyline(selectPoints(points, indexes), lineSettings);
+        }
+    };
+
     var drawGlyphPoints = function(svg, height, indexes) {
         var circleRadius = height * 0.03;
         var circleStrokeWidth = height * 0.01;
@@ -62,8 +87,6 @@ var GlyphRenderer = function() {
             svg.circle(points[i][0], points[i][1], circleRadius,
                 {fill: 'none', stroke: 'gray', strokeWidth: circleStrokeWidth});
         }
-
-        var g = svg.group({stroke: '#8080ff', strokeWidth: lineWidth});
 
         var lineSettings = {
             stroke: '#8080ff',
@@ -80,7 +103,7 @@ var GlyphRenderer = function() {
         }
     };
 
-    return {	
+    return {
         draw: function(selector) {
             $(selector).svg(function(svg) {
                 var word = $(this).attr("data-name");
@@ -89,7 +112,17 @@ var GlyphRenderer = function() {
                     drawGlyphPoints(svg, $(this).height(), indexes);
                 }
             });
-        }
+        },
+
+        drawMini: function(selector) {
+            $(selector).svg(function(svg) {
+                var word = $(this).attr("data-name");
+                var indexes = glyphMap[word];
+                if (indexes != null) {
+                    drawMiniGlyph(svg, $(this).height(), indexes);
+                }
+            });
+        },
     };
 }();
 
@@ -97,5 +130,10 @@ $(document).ready(function() {
     $('.glyph').each(function() {
         GlyphRenderer.draw($(this));
     });
+
+    $('.mini-glyph').each(function() {
+        GlyphRenderer.drawMini($(this));
+    });
+
 });
 

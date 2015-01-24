@@ -7,7 +7,7 @@
 
     <h1><%= @glyph.title %></h1>
 
-    <div class="glyph head" data-name="<%= @glyph.shape %>"></div>
+    <div class="glyph head" data-name="<%= @glyph.symbol %>"></div>
 
     <% if @glyph.desc %>
     <p><%= @glyph.desc %>
@@ -21,5 +21,10 @@
     <% if @glyph.antonym %>
       <p>Antonym: <%= ViewUtils.link(@glyph.antonym) %>
     <% end %>
+
+    <% if @glyph.shape %>
+      <p>Shape: <%= ViewUtils.shape_link(@glyph.shape) %>
+    <% end %>
+
   </body>
 </html>
