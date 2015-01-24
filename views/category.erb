@@ -8,6 +8,10 @@
     <div id="content">
       <h1><%= @category.title %></h1>
 
+      <% if @category.desc %>
+      <p id="desc"><%= @category.desc %>
+      <% end %>
+
       <% @category.list.each do |key, name, glyphs| %>
       <h2 id="<%= key %>"><%= name %></h2>
         <% glyphs.each do |glyph_line| %>

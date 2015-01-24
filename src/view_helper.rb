@@ -9,11 +9,13 @@ class ViewUtils
     EOL
   end
 
-  def self.shape_link(shape)
-    props = SHAPE_TYPES[shape]
+  def self.category_link(type, uri, hash)
+    puts type.inspect
+    props = hash[type]
+    puts props.inspect
     desc = props[:desc].downcase
     link = <<-EOL
-    <a href="/shapes/&#35;#{shape}" class="category">#{desc}</a>
+    <a href="#{uri}/&#35;#{type}" class="category">#{desc}</a>
     EOL
   end
 

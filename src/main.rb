@@ -32,7 +32,16 @@ get '/glyphs/:glyph/?' do
 end
 
 get '/shapes/?' do  
-  @category = Category.new("Glyphs Sorted by Shape", SHAPE_TYPES)
+  @category = Category.new("Glyphs Sorted by Shape", nil, SHAPE_TYPES)
   erb :category
 end
 
+get '/segments/?' do
+  desc = <<-EOL
+  Each line between two points on the grid counts as a segment.
+  For instance, the glyph for &ldquo;create&rdquo; is a line between 5 points, so
+  it contains 4 segments.
+  EOL
+  @category = Category.new("Number of Segments", desc, SEGMENTS_CATEGORY)
+  erb :category
+end

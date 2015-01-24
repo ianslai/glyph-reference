@@ -24,8 +24,13 @@
       <% end %>
 
       <% if @glyph.shape %>
-        <p>Shape: <%= ViewUtils.shape_link(@glyph.shape) %>
+        <p>Shape: <%= ViewUtils.category_link(@glyph.shape, '/shapes', SHAPE_TYPES) %>
       <% end %>
+
+      <% if @glyph.segments %>
+        <p>Length: <%= ViewUtils.category_link(@glyph.segments, '/segments', SEGMENTS_CATEGORY) %>
+      <% end %>
+
     </div>
   </body>
 </html>

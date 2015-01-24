@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Georgia', serif; /*'Roboto Slab', serif;*/
     font-size: 18;
 }
 
@@ -65,15 +65,23 @@ a:link {
 /* Adjust content for mobile devices */
 @media only screen and (max-device-width: 480px) {
     body {
-        font-size: 300%;
         padding: 10px;
+        font-size: 100%;
     }
 
     h1 {
-        font-size: 150%;
+        font-size: 450%;
     }
 
     h2 {
+        font-size: 300%;
+    }
+
+    p {
+        font-size: 300%;
+    }
+
+    #desc {
         font-size: 100%;
     }
 
@@ -90,6 +98,10 @@ a:link {
     .mini-glyph {
         width: 60px;
         height: 60px;
+    }
+
+    .glyph-container .glyph-name {
+        font-size: 300%;
     }
 }
 

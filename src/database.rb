@@ -46,7 +46,7 @@ ANTONYMS = [
 
 # Detailed descriptions for glyphs that have them
 DESCRIPTIONS = {
-  :not => "Derived from the symbol for the \"not\" operator from Boolean algebra (&not;).",
+  :not => "Derived from the symbol for the &ldquo;not&rdquo; operator from Boolean algebra (&not;).",
 }
 
 # Glyphs sorted by shape
@@ -139,3 +139,37 @@ SHAPE_TYPES = {
     :glyphs => [[:'clear-all', :'open-all', ]],
   },
 }
+
+SEGMENTS = {
+  1 => [:forget, :gain, :ignore, :lose, :see, :simple],
+  2 => [:advance, :clear, :distance, :inside, :less, :more, :new, :old, :retreat, :self, :use],
+  3 => [:answer, :barrier, :body, :change, :complex, :courage, :danger, :deteriorate, :discover,
+        :easy, :equal, :failure, :fear, :follow, :future, :have, :improve, :open, :past, :path,
+        :present, :pursue, :question, :safety, :save, :stay, :success, :want, :weak],
+  4 => [:attack, :avoid, :create, :data, :defend, :destroy, :die, :difficult, :escape,
+        :help, :hide, :imperfect, :impure, :lead, :live, :message, :mind, :nourish,
+        :potential, :pure, :react, :repair, :search, :soul, :strong],
+  5 => [:again, :capture, :civilization, :conflict, :destiny, :end, :human,
+        :liberate, :lie, :nature, :rebel, :resistance, :restraint, :together, :xm],
+  6 => [:all, :harm, :journey, :separate, :shapers, :truth], 
+  7 => [:chaos, :contemplate, :enlightened, :perfection],
+  8 => [:"clear-all", :idea, :peace, :portal],
+  9 => [:"open-all"],
+}
+
+# include homographs in segments listing
+SEGMENTS.each do |num, glyphs|
+  SEGMENTS[num] = glyphs.map {|glyph|
+    HOMOGRAPHS.find{|h| h.include?(glyph)} || glyph
+  }.flatten.sort.uniq
+end
+
+SEGMENTS_CATEGORY = Hash[SEGMENTS.map { |num, glyphs|
+  [
+    :"segments#{num}",
+    {
+      :desc => "#{num} segment#{num > 1 ? 's' : ''}",
+      :glyphs => [ glyphs ],
+    }
+  ]
+}]
