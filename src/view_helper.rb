@@ -5,7 +5,7 @@ class ViewUtils
     uri = "/glyphs/#{glyph}"
     text = glyph.to_s.downcase
     link = <<-EOL
-    <a href="#{uri}"><span class="mini-glyph" data-name="#{glyph}"></span> <span class="glyph-name">#{text}</span></a>
+    <a href="#{uri}" class="glyph-link"><span class="mini-glyph" data-name="#{glyph}"></span>&nbsp;<span class="glyph-name">#{text}</span></a>
     EOL
   end
 

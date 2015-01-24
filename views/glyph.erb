@@ -5,26 +5,27 @@
   </head>
   <body>
 
-    <h1><%= @glyph.title %></h1>
+    <div id="content">
+      <h1><%= @glyph.title %></h1>
 
-    <div class="glyph head" data-name="<%= @glyph.symbol %>"></div>
+      <div class="glyph head" data-name="<%= @glyph.symbol %>"></div>
 
-    <% if @glyph.desc %>
-    <p><%= @glyph.desc %>
-    <% end %>
+      <% if @glyph.desc %>
+      <p><%= @glyph.desc %>
+      <% end %>
 
-    <% unless @glyph.homographs.empty? %>
-      <p>Homographs:
-      <%= @glyph.homographs.map {|hgraph| ViewUtils.link(hgraph)}.join(',') %>
-    <% end %>
+      <% unless @glyph.homographs.empty? %>
+        <p>Homographs:
+        <%= @glyph.homographs.map {|hgraph| ViewUtils.link(hgraph)}.join(',') %>
+      <% end %>
 
-    <% if @glyph.antonym %>
-      <p>Antonym: <%= ViewUtils.link(@glyph.antonym) %>
-    <% end %>
+      <% if @glyph.antonym %>
+        <p>Antonym: <%= ViewUtils.link(@glyph.antonym) %>
+      <% end %>
 
-    <% if @glyph.shape %>
-      <p>Shape: <%= ViewUtils.shape_link(@glyph.shape) %>
-    <% end %>
-
+      <% if @glyph.shape %>
+        <p>Shape: <%= ViewUtils.shape_link(@glyph.shape) %>
+      <% end %>
+    </div>
   </body>
 </html>
