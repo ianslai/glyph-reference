@@ -102,7 +102,7 @@ var Shapes = function() {
         'use': [10, 8, 5],
         'want': [2, 7, 3, 8],
         'weak': [1, 6, 9, 8],
-        'xm': [10, 7, 6, 9, 8, 10],
+        'xm': [10, 7, 6, 9, 8, 10]
     };
 
     var synonyms = {
@@ -119,7 +119,7 @@ var Shapes = function() {
         'thought': 'idea',
         'stability': 'stay',
         'struggle': 'resistance',
-        'war': 'attack',
+        'war': 'attack'
     };
 
     for (key in synonyms) {

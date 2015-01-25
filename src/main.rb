@@ -9,8 +9,7 @@ require_relative 'model'
 require_relative 'view_helper'
 
 get '/?' do
-  @glyphs = [:message, :data]
-  erb :test
+  erb :home
 end
 
 get '/test/?' do

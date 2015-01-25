@@ -124,7 +124,7 @@ var GlyphRenderer = function() {
                     }
                 }
             });
-        },
+        }
     };
 }();
 
