@@ -7,157 +7,17 @@
   <body>
 
     <div id="content">
-<h1>Semantic associations</h1>
+      <h1>Semantic associations</h1>
 
-Glyphs can be grouped by semantic association, and their shapes and positions are often
-correlated with their meaning.  This page details some of those associations in the hopes
-that they will help you memorize the glyphs more readily.
+      Glyphs can be grouped by semantic association, and their shapes and positions are often
+      correlated with their meaning.  This page details some of those associations in the hopes
+      that they will help you memorize the glyphs more readily.
 
-<p>Contents:
-<insert-toc/>
+      <p>Contents:
 
-<h2 id="gain-loss">Gain and loss</h2>
+      <%= @toc %>
 
-The left side of the grid is associated with glyphs representing gain, and the
-right side is associated with glyphs representing loss.
-
-<ul>
-<li>For example, :gain, :advance, :success/:progress are all on the left.
-Their antonyms :lose, :retreat, :failure are all on the right.
-
-<li>:path points to the left, while :barrier points to the right.
-
-<li>Note that :have is basically a kite shape with a segment on the right missing, while :hide
-points to the right.
-</ul>
-
-The glyphs associated with time do not have such associations.
-
-<h2 id="past-future">Past and future</h2>
-
-Glyphs associated with time are often placed along a time axis
-running from the past (left side) to the future (right side).
-
-<ul>
-<li>:past points to the left, while :future points to the right.  :present/:now sit squarely in the middle.
-<li>:forget and :ignore are glyphs that mirror each other, while :old and :new are rotated 180&deg;.
-<li>:improve points up and to the right, while its opposite :deteriorate (rotated 180&deg;)points down and to the left.
-</ul>
-
-<h2 id="heaven-earth">Heaven and earth</h2>
-
-The top of the glyph grid can be associated with heaven (purity, otherworldliness),
-while the bottom is associated with earth.
-
-<ul>
-  <li>:human sits on the bottom half, while :shapers points to the top.
-  <li>:pure points to the top, while is 180&deg; opposite :impure points to the bottom.
-  <li>:less points toward the bottom, while :more points toward the top.
-  <li>:live looks like arms raised up, while its mirror :die sinks down.
-  <li>The anchor points of :safety and :stability/:stay are firmly grounded in the earth.
-  <li>:simple sits just below the middle of the grid, while :complex zigzags its way towards the top.
-  <li>:self points toward the bottom&mdash;in fact it almost always points toward the player holding the scanner.
-  <li>:pursue points up, while its mirrored opposite :want points down toward the player.
-  <li>:liberate can be interpreted as a hook going up, while :capture (rotated 180&deg;) points down.
-</ul>
-
-Also, heaven is associated with the mechanical, while earth is associated with the natural:
-
-<ul>
-  <li>:civilization versus :nature
-  <li>:repair versus :nourish
-</ul>
-
-<h2 id="glyph-composition">Glyph composition</h2>
-
-Some glyphs are composed of or contain others.
-
-<ul>
-  <li>:human is a combination of :mind, :body, and :soul.  It also contains :destiny in its bounding pentagon.
-  <li>:past contains both :old and :forget, while :future contains both :new and :ignore.
-  <li>:truth with one segment missing is :lie; with two segments missing, it becomes :imperfect.
-  <li>:attack/:war is composed of :advance and :retreat.
-  <li>:xm and :portal both contain many glyphs in their boundaries, and have separate sections below.
-  <li>:all creates a hexagon around the entirety of the grid.
-</ul>
-
-<h2 id="xm-rectangle">XM rectangle</h2> 
-
-The rectangle represented by :strong contains glyphs associated with XM.
-
-The lines in the glyph :xm contain :answer, :equal, and :not/:inside.  Furthermore, the following
-glyphs are contained in its boundaries:
-
-<ul>
-  <li>:complex and :body
-  <li>:truth, :lie, and :imperfect
-  <li>:less and :more
-</ul>
-
-A few other glyphs are within the bounding rectangle: :search, :simple, and :present/:now.
-
-<h2 id="portal">Portal</h2>
-
-The boundaries of :portal carve out a region of the grid that contains many words associated with it.
-All the glyphs associated with :xm are represented, as well as these others:
-
-<ul>
-  <li>:past and :future
-  <li>:weak and :difficult
-  <li>:old/:new, :gain/:lose, :forget/:ignore
-  <li>:civilization and :nature
-  <li>:courage and :fear
-  <li>:create and :destroy
-  <li>:improve and :deteriorate
-  <li>:live/:breathe and :die
-  <li>:idea/:thought and :message
-  <li>:react, :use, :save
-  <li>:stability/:stay, :safety
-  <li>:together, :repeat/:again
-</ul>
-
-<h2 id="antonyms">Antonyms</h2>
-
-Many glyphs are related to their antonyms or opposites by shape.
-
-<h3>Mirror (reflection)</h3>
-
-<ul>
-  <li>:advance/:retreat
-  <li>:path/:barrier
-  <li>:path/:outside
-  <li>:live/:die
-  <li>:civilization/:nature
-  <li>:create/:destroy
-  <li>:past/:future
-  <li>:success/:failure
-  <li>:mind/:soul
-</ul>
-
-<h3>Rotation</h3>
-
-<ul>
-  <li>:capture/:liberate
-  <li>:courage/:fear
-  <li>:data/:message (not quite antonyms)
-  <li>:improve/:deteriorate
-  <li>:pure/:impure
-</ul>
-
-<h3>Others</h3>
-<ul>
-  <li>:truth with a segment missing is :lie.
-  <li>:question looks like a question mark, while :answer is sort of a smaller reflection.
-  <li>:strong is a solid rectangle, while :weak is composed of :not and a a limp appendage segment.
-  <li>:search and :answer are both counter-clockwise spirals.
-  <li>:complex forms the bulk of a sigma (&Sigma;), while :simple is the bottom line.
-  <li>:outside is on the outer hexagon of the grid, while :inside is on the inner rectangle.
-  <li>:lead is a hook on the left, while :follow is a simpler hook on the right.
-  <li>:difficult is a complex shape (I like to think of it as a
-      <a href="http://en.wikipedia.org/wiki/Koch_snowflake">Koch curve</a> generator), while
-      :easy is a simple V-shape.
-</ul>
-
+      <%= @contents %>
     </div>
   </body>
 </html>

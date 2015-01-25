@@ -1,48 +1,54 @@
 # Preprocessing of page templates to extract references to glyphs
+require_relative 'textdata.rb'
+require_relative 'view_helper.rb'
 
-SECTION_REGEX = %r{<h2 id="(.+?)">(.+?)</h2>}i
-GLYPH_TOKEN = /:([a-z-]+)/
-
-class PageSectionParser
-  def initialize(file)
-    root_path = File.dirname(File.dirname(__FILE__))
-    view_path = File.join(root_path, 'views')
-    @page_title, @refs = parse(File.join(view_path, file))
+class TextDataView
+  def initialize(file, uri, title)
+    @textdata = TextDataParser.new(file).parse
+    @uri = uri
+    @page_title = title
   end
 
-  def parse(file)
-    sections = [['', 'Top']]
-    refs = {}
-    page_title = 'Untitled'
-    File.readlines(file).each do |line|
-      if line =~ %r{<h1>(.+?)</h1>}i then
-        page_title = $1
-      elsif line =~ SECTION_REGEX then
-        id, title = $1, $2
-        sections.push [id, title]
-      else
-        line.scan(GLYPH_TOKEN).each do |glyph|
-          sym = glyph.first.to_sym
-          refs[sym] ||= []
-          refs[sym].push sections.last
-        end
-      end
+  def toc
+    section_items = @textdata.sections.values.map {|section|
+      item = <<-EOL
+      <li><a href="&#35;#{section.id}">#{section.title}</a>
+      EOL
+    }
+    toc = <<-EOL
+    <ul>
+      #{section_items.join("\n")}
+    </ul>
+    EOL
+  end
+
+  def contents
+    @textdata.to_s do |lines|
+      ViewUtils.insert_links(lines)
     end
-    [page_title, refs]
   end
 
-  def generate_links(uri)
-    Hash[@refs.map do |glyph, sections|
-      links = sections.uniq.map do |id, title|
-        anchor = id.empty? ? '' : "&#35;#{id}"
-        link = <<-EOL
-        <a href="#{uri}#{anchor}">#{@page_title} (#{title})</a>
-        EOL
-        link.strip
-      end
-      [glyph, links]
-    end]
+  def section(sym)
+    section = @textdata.sections[sym.to_s]    
+    if section
+      section.lines.map do |lines|
+        ViewUtils.insert_links(lines)
+      end.join("\n")
+    else
+      nil
+    end
+  end
+
+  def ref_links(sym)
+    refs = @textdata.refs[sym] || []
+    refs.map do |section|
+      anchor = "&#35;#{section.id}"
+      link = <<-EOL
+<a href="#{@uri}#{anchor}">#{@page_title} (#{section.title})</a>
+      EOL
+    end
   end
 end
 
-SEMANTIC_ASSOCIATIONS = PageSectionParser.new('semantic.erb').generate_links("/semantic")
+SEMANTIC_ASSOCIATIONS = TextDataView.new('semantic.erb', '/semantic', 'Semantic associations')
+DESCRIPTIONS = TextDataView.new('desc.erb', '/', 'Descriptions')

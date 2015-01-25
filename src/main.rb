@@ -45,6 +45,7 @@ get '/segments/?' do
 end
 
 get '/semantic/?' do
-  raw_output = ViewUtils.insert_links(erb :semantic)
-  ViewUtils.insert_toc(raw_output)
+  @contents = SEMANTIC_ASSOCIATIONS.contents
+  @toc = SEMANTIC_ASSOCIATIONS.toc
+  erb :semantic
 end

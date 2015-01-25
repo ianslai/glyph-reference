@@ -16,7 +16,7 @@ private
     @homographs = find_homographs(sym)
     @title = sym.to_s.upcase
     @antonym = find_antonym(sym)
-    @desc = DESCRIPTIONS[sym]
+    @desc = DESCRIPTIONS.section(sym)
     @shape = find_category(sym, SHAPE_TYPES)
     @segments = find_category(sym, SEGMENTS_CATEGORY)
     @see_alsos = find_see_alsos(sym)
@@ -51,7 +51,7 @@ private
 
   def find_see_alsos(sym)
     [SEMANTIC_ASSOCIATIONS].map do |page|
-      page[sym] || []
+      page.ref_links(sym)
     end.flatten
   end
 

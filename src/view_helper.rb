@@ -1,5 +1,5 @@
-require_relative 'preprocess'
 require_relative 'database'
+require_relative 'textdata'
 
 class ViewUtils
   def self.link(glyph)
@@ -30,18 +30,4 @@ class ViewUtils
     text.gsub(GLYPH_TOKEN) { ViewUtils.link($1) }
   end
 
-  def self.insert_toc(text)
-    sections = text.scan(SECTION_REGEX)
-    section_items = sections.map {|id, title|
-      item = <<-EOL
-      <li><a href="&#35;#{id}">#{title}</a>
-      EOL
-    }
-    toc = <<-EOL
-    <ul>
-      #{section_items.join("\n")}
-    </ul>
-    EOL
-    text.sub(%r{<insert-toc/>}, toc)
-  end
 end
