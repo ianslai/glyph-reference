@@ -11,8 +11,9 @@
 
       <div class="glyph head" data-name="<%= @glyph.symbol %>"></div>
 
+      <div id="attributes">
       <% if @glyph.desc %>
-      <p><%= @glyph.desc %>
+      <p><%= @glyph.desc.gsub(/:([a-z-]+)/) { ViewUtils.link($1) } %>
       <% end %>
 
       <% unless @glyph.homographs.empty? %>
@@ -31,6 +32,20 @@
       <% if @glyph.segments %>
         <p>Length: <%= ViewUtils.category_link(@glyph.segments, '/segments', SEGMENTS_CATEGORY) %>
       <% end %>
+
+      <% unless @glyph.see_alsos.empty? %>
+        <p>See also:
+        <% if @glyph.see_alsos.length == 1 %>
+          <%= @glyph.see_alsos.first %>
+        <% else %>
+          <ul>
+            <% @glyph.see_alsos.each do |link| %>
+            <li><%= link %>
+            <% end %>
+          </ul>
+        <% end %>
+      <% end %>
+      </div>
 
     </div>
   </body>

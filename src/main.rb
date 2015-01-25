@@ -24,7 +24,6 @@ end
 
 get '/glyphs/:glyph/?' do
   sym = params[:glyph].downcase.to_sym
-  puts sym
   @glyph = GlyphEntry.lookup(sym)
   pass unless @glyph
   erb :glyph
@@ -43,4 +42,9 @@ get '/segments/?' do
   EOL
   @category = Category.new("Number of Segments", desc, SEGMENTS_CATEGORY)
   erb :category
+end
+
+get '/semantic/?' do
+  raw_output = ViewUtils.insert_links(erb :semantic)
+  ViewUtils.insert_toc(raw_output)
 end

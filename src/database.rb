@@ -46,7 +46,10 @@ ANTONYMS = [
 
 # Detailed descriptions for glyphs that have them
 DESCRIPTIONS = {
+  :accept => "A triangle with the point down, in the same direction as :self",
   :not => "Derived from the symbol for the &ldquo;not&rdquo; operator from Boolean algebra (&not;).",
+  :simple => "A single short line in contrast to the zigzag of :complex.",
+  :complex => "A zigzag in contrast to the single line of :simple.",
 }
 
 # Glyphs sorted by shape

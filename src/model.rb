@@ -1,8 +1,9 @@
 require_relative 'glyphs.rb'
 require_relative 'database.rb'
+require_relative 'preprocess.rb'
 
 class GlyphEntry
-  attr_reader :homographs, :title, :symbol, :antonym, :desc, :shape, :segments
+  attr_reader :homographs, :title, :symbol, :antonym, :desc, :shape, :segments, :see_alsos
 
   def self.lookup(name)
     GLYPHS.include?(name) ? GlyphEntry.new(name.to_sym) : nil
@@ -18,6 +19,7 @@ private
     @desc = DESCRIPTIONS[sym]
     @shape = find_category(sym, SHAPE_TYPES)
     @segments = find_category(sym, SEGMENTS_CATEGORY)
+    @see_alsos = find_see_alsos(sym)
   end
 
   def find_homographs(sym)
@@ -45,6 +47,12 @@ private
     else
       nil
     end
+  end
+
+  def find_see_alsos(sym)
+    [SEMANTIC_ASSOCIATIONS].map do |page|
+      page[sym] || []
+    end.flatten
   end
 
 end
