@@ -45,6 +45,15 @@
           </ul>
         <% end %>
       <% end %>
+
+      <% unless @glyph.phrases.empty? %>
+        <p>Associated phrase<%= @glyph.phrases.length > 1 ? 's' : ''%>:
+          <ul>
+            <% @glyph.phrases.each do |phrase| %>
+            <li><%= phrase %>
+            <% end %>
+          </ul>
+      <% end %>
       </div>
 
     </div>

@@ -1,9 +1,11 @@
 require_relative 'glyphs.rb'
 require_relative 'database.rb'
 require_relative 'preprocess.rb'
+require_relative 'phrases.rb'
+require_relative 'view_helper'
 
 class GlyphEntry
-  attr_reader :homographs, :title, :symbol, :antonym, :desc, :shape, :segments, :see_alsos
+  attr_reader :homographs, :title, :symbol, :antonym, :desc, :shape, :segments, :see_alsos, :phrases
 
   def self.lookup(name)
     GLYPHS.include?(name) ? GlyphEntry.new(name.to_sym) : nil
@@ -20,6 +22,7 @@ private
     @shape = find_category(sym, SHAPE_TYPES)
     @segments = find_category(sym, SEGMENTS_CATEGORY)
     @see_alsos = find_see_alsos(sym)
+    @phrases = find_phrases(sym)
   end
 
   def find_homographs(sym)
@@ -55,6 +58,9 @@ private
     end.flatten
   end
 
+  def find_phrases(sym)
+    (PHRASES_REF[sym] || []).map { |phrase| PhraseReference.new(phrase) }
+  end
 end
 
 class Category
@@ -66,5 +72,15 @@ class Category
     @list = category_hash.map {|key, hash|
       [key, hash[:desc], hash[:glyphs]]
     }
+  end
+end
+
+class PhraseReference
+  def initialize(phrase)
+    @phrase = phrase
+  end
+
+  def to_s
+    @phrase.map {|glyph| ViewUtils.link(glyph) }.join(' ')
   end
 end
