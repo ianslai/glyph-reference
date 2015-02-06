@@ -62,7 +62,7 @@ SHAPE_TYPES = {
       [:strong, :human, :xm, :all],
     ],
   },
-  
+
   :horseshoe => {
     :desc => "Horseshoe",
     :glyphs => [
@@ -71,7 +71,7 @@ SHAPE_TYPES = {
       [:discover, :potential, :have, ],
     ],
   },
-  
+
   :hook => {
     :desc => "Hook",
     :glyphs => [
@@ -85,7 +85,7 @@ SHAPE_TYPES = {
     :desc => "M-shaped",
     :glyphs => [[:again, :repeat, :avoid, ]],
   },
-  
+
   :en => {
     :desc => "N-shaped",
     :glyphs => [
@@ -142,11 +142,11 @@ SEGMENTS = {
         :easy, :equal, :failure, :fear, :follow, :future, :have, :improve, :open, :past, :path,
         :present, :pursue, :question, :safety, :save, :stay, :success, :want, :weak],
   4 => [:attack, :avoid, :create, :data, :defend, :destroy, :die, :difficult, :escape,
-        :help, :hide, :imperfect, :impure, :lead, :live, :message, :mind, :nourish,
+        :help, :hide, :impure, :lead, :live, :message, :mind, :nourish,
         :potential, :pure, :react, :repair, :search, :soul, :strong],
   5 => [:again, :capture, :civilization, :conflict, :destiny, :end, :human,
         :liberate, :lie, :nature, :rebel, :resistance, :restraint, :together, :xm],
-  6 => [:all, :harm, :journey, :separate, :shapers, :truth], 
+  6 => [:all, :harm, :journey, :separate, :shapers, :truth],
   7 => [:chaos, :contemplate, :enlightened, :perfection],
   8 => [:"clear-all", :idea, :peace, :portal],
   9 => [:"open-all"],
@@ -159,12 +159,22 @@ SEGMENTS.each do |num, glyphs|
   }.flatten.sort.uniq
 end
 
-SEGMENTS_CATEGORY = Hash[SEGMENTS.map { |num, glyphs|
-  [
-    :"segments#{num}",
+SEGMENTS_CATEGORY = lambda {
+  segments = SEGMENTS.map { |num, glyphs|
+    [
+      :"segments#{num}",
+      {
+        :desc => "#{num} segment#{num > 1 ? 's' : ''}",
+        :glyphs => [ glyphs ],
+      }
+    ]
+  }
+  segments.push [
+    :"segments4sortof",
     {
-      :desc => "#{num} segment#{num > 1 ? 's' : ''}",
-      :glyphs => [ glyphs ],
+      :desc => "4 segments (sort of)",
+      :glyphs => [[:imperfect]],
     }
   ]
-}]
+  Hash[segments.sort]
+}.call

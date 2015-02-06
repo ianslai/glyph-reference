@@ -48,7 +48,7 @@ var Shapes = function() {
         'human': [3, 7, 6, 9, 8, 3],
         'idea': [7, 2, 1, 6, 10, 8, 4, 5, 9],
         'ignore': [8, 4],
-        'imperfect': [6, 10, 8, 9, 10],
+        'imperfect': [9, 10, 7, 6, 10],
         'improve': [8, 10, 9, 5],
         'impure': [10, 7, 6, 10, 3],
         'inside': [6, 9, 8],
