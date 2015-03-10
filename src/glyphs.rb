@@ -44,6 +44,7 @@ GLYPHS = %{
   forget
   future
   gain
+  grow
   harm
   harmony
   have
@@ -88,6 +89,7 @@ GLYPHS = %{
   question
   react
   rebel
+  reduce
   repair
   repeat
   resistance

@@ -30,6 +30,7 @@ ANTONYMS = [
   [:create, :destroy],
   [:improve, :deteriorate],
   [:easy, :difficult],
+  [:grow, :reduce],
   [:outside, :inside],
   [:enlightened, :resistance],
   [:success, :failure],
@@ -100,6 +101,7 @@ SHAPE_TYPES = {
     :glyphs => [
       [:attack, :war, :defend, :live, :breathe, :die, :self],
       [:more, :less, :old, :new, :inside, :not],
+      [:grow, :reduce],
       [:distance, :outside, :path, :barrier, :easy],
       [:deteriorate, :improve, :react, :restraint, :use],
     ],
@@ -137,7 +139,7 @@ SHAPE_TYPES = {
 
 SEGMENTS = {
   1 => [:forget, :gain, :ignore, :lose, :see, :simple],
-  2 => [:advance, :clear, :distance, :inside, :less, :more, :new, :old, :retreat, :self, :use],
+  2 => [:advance, :clear, :distance, :grow, :inside, :less, :more, :new, :old, :reduce, :retreat, :self, :use],
   3 => [:answer, :barrier, :body, :change, :complex, :courage, :danger, :deteriorate, :discover,
         :easy, :equal, :failure, :fear, :follow, :future, :have, :improve, :open, :past, :path,
         :present, :pursue, :question, :safety, :save, :stay, :success, :want, :weak],
