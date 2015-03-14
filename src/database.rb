@@ -6,18 +6,25 @@ HOMOGRAPHS = [
   [:breathe, :live],
   [:evolution, :progress, :success],
   [:harmony, :peace],
+  [:i, :me],
   [:not, :inside],
   [:now, :present],
   [:outside, :distance],
+  [:reduce, :contract],
+  [:repair, :recharge],
   [:repeat, :again],
-  [:thought, :idea],
+  [:thought, :idea, :creativity],
+  [:self, :individual],
   [:stability, :stay],
   [:struggle, :resistance],
+  [:us, :we],
   [:war, :attack],
+  [:you, :your],
 ]
 
 # Glyphs with opposite meanings
 ANTONYMS = [
+  [:begin, :end],
   [:peace, :war],
   [:attack, :defend],
   [:advance, :retreat],
@@ -28,9 +35,10 @@ ANTONYMS = [
   [:complex, :simple],
   [:courage, :fear],
   [:create, :destroy],
+  [[:i, :me], :you],
   [:improve, :deteriorate],
   [:easy, :difficult],
-  [:grow, :reduce],
+  [:grow, [:contract, :reduce]],
   [:outside, :inside],
   [:enlightened, :resistance],
   [:success, :failure],
@@ -41,6 +49,7 @@ ANTONYMS = [
   [:less, :more],
   [:civilization, :nature],
   [:old, :new],
+  [:them, [:us, :we]],
   [:truth, :lie],
   [:weak, :strong],
 ]
@@ -58,9 +67,10 @@ SHAPE_TYPES = {
   :polygonal => {
     :desc => "Polygonal",
     :glyphs => [
-      [:accept, :open, :nourish, :repair],
+      [:accept, :open, :nourish, :repair, :recharge],
+      [:i, :me, :you, :your],
       [:mind, :body, :soul, :end],
-      [:strong, :human, :xm, :all],
+      [:strong, :knowledge, :human, :xm, :all],
     ],
   },
 
@@ -69,7 +79,7 @@ SHAPE_TYPES = {
     :glyphs => [
       [:past, :present, :now, :equal, :future],
       [:safety, :stability, :stay,],
-      [:discover, :potential, :have, ],
+      [:discover, :potential, :have, :begin, :share],
     ],
   },
 
@@ -84,7 +94,9 @@ SHAPE_TYPES = {
 
   :em => {
     :desc => "M-shaped",
-    :glyphs => [[:again, :repeat, :avoid, ]],
+    :glyphs => [
+      [:again, :repeat, :avoid],
+    ],
   },
 
   :en => {
@@ -92,18 +104,20 @@ SHAPE_TYPES = {
     :glyphs => [
       [:data, :message, :rebel],
       [:change, :complex, :pursue, :want],
-      [:evolution, :progress, :success, :failure, :follow]
+      [:evolution, :progress, :success, :failure, :follow],
     ],
   },
 
   :vee => {
     :desc => "V-shaped",
     :glyphs => [
-      [:attack, :war, :defend, :live, :breathe, :die, :self],
+      [:attack, :war, :defend],
+      [:live, :breathe, :die, :self, :individual],
       [:more, :less, :old, :new, :inside, :not],
-      [:grow, :reduce],
+      [:grow, :reduce, :contract],
       [:distance, :outside, :path, :barrier, :easy],
-      [:deteriorate, :improve, :react, :restraint, :use],
+      [:deteriorate, :improve, :react, :use],
+      [:restraint, :them, :us, :we],
     ],
   },
 
@@ -119,7 +133,10 @@ SHAPE_TYPES = {
 
   :bowtie => {
     :desc => "Bowtie",
-    :glyphs => [[:truth, :lie, :peace, :harmony, :portal, :idea, :thought]],
+    :glyphs => [
+      [:truth, :lie, :peace, :harmony],
+      [:portal, :creativity, :idea, :thought]
+    ],
   },
 
   :complex => {
@@ -139,13 +156,13 @@ SHAPE_TYPES = {
 
 SEGMENTS = {
   1 => [:forget, :gain, :ignore, :lose, :see, :simple],
-  2 => [:advance, :clear, :distance, :grow, :inside, :less, :more, :new, :old, :reduce, :retreat, :self, :use],
-  3 => [:answer, :barrier, :body, :change, :complex, :courage, :danger, :deteriorate, :discover,
-        :easy, :equal, :failure, :fear, :follow, :future, :have, :improve, :open, :past, :path,
-        :present, :pursue, :question, :safety, :save, :stay, :success, :want, :weak],
+  2 => [:advance, :clear, :distance, :grow, :inside, :less, :more, :new, :old, :reduce, :retreat, :self, :them, :use],
+  3 => [:answer, :barrier, :begin, :body, :change, :complex, :courage, :danger, :deteriorate, :discover,
+        :easy, :equal, :failure, :fear, :follow, :future, :have, :i, :improve, :open, :past, :path,
+        :present, :pursue, :question, :safety, :save, :stay, :success, :want, :weak, :you],
   4 => [:attack, :avoid, :create, :data, :defend, :destroy, :die, :difficult, :escape,
-        :help, :hide, :impure, :lead, :live, :message, :mind, :nourish,
-        :potential, :pure, :react, :repair, :search, :soul, :strong],
+        :help, :hide, :impure, :knowledge, :lead, :live, :message, :mind, :nourish,
+        :potential, :pure, :react, :repair, :search, :share, :soul, :strong],
   5 => [:again, :capture, :civilization, :conflict, :destiny, :end, :human,
         :liberate, :lie, :nature, :rebel, :resistance, :restraint, :together, :xm],
   6 => [:all, :harm, :journey, :separate, :shapers, :truth],
@@ -180,3 +197,37 @@ SEGMENTS_CATEGORY = lambda {
   ]
   Hash[segments.sort]
 }.call
+
+SINGLETONS = [
+  :begin,
+  :creativity,
+  :contract,
+  :grow,
+  :i,
+  :me,
+  :individual,
+  :knowledge,
+  :recharge,
+  :reduce,
+  :share,
+  :them,
+  :us,
+  :we,
+  :you,
+  :your,
+]
+
+UNSEEN = [
+  :begin,
+  :contract,
+  :i,
+  :me,
+  :individual,
+  :knowledge,
+  :recharge,
+  :them,
+  :us,
+  :we,
+  :you,
+  :your,
+]

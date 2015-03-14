@@ -5,7 +5,7 @@ require_relative 'phrases.rb'
 require_relative 'view_helper'
 
 class GlyphEntry
-  attr_reader :homographs, :title, :symbol, :antonym, :desc, :shape, :segments, :see_alsos, :phrases
+  attr_reader :homographs, :title, :symbol, :antonyms, :desc, :shape, :segments, :see_alsos, :phrases
 
   def self.lookup(name)
     GLYPHS.include?(name) ? GlyphEntry.new(name.to_sym) : nil
@@ -17,7 +17,7 @@ private
     @symbol = sym
     @homographs = find_homographs(sym)
     @title = sym.to_s.upcase
-    @antonym = find_antonym(sym)
+    @antonyms = find_antonyms(sym)
     @desc = DESCRIPTIONS.section(sym)
     @shape = find_category(sym, SHAPE_TYPES)
     @segments = find_category(sym, SEGMENTS_CATEGORY)
@@ -28,19 +28,20 @@ private
   def find_homographs(sym)
     hgraphs = HOMOGRAPHS.find {|set| set.include?(sym) }
     if hgraphs
-      hgraphs - [sym]
+      hgraphs.sort - [sym]
     else
       []
     end
   end
 
-  def find_antonym(sym)
-    pair = ANTONYMS.find {|set| set.include?(sym)}
-    if pair
-      (pair - [sym]).first
-    else
-      nil
-    end
+  def find_antonyms(sym)
+    # Antonyms are defined as pairs where either side could be
+    # a single glyph or a list of glyphs. Find the glyphs on the
+    # opposite sides.
+    pairs = ANTONYMS.select {|set| set.flatten.include?(sym)}
+    antonyms = pairs.map do |pair|
+      [pair.first].flatten.include?(sym) ? pair.last : pair.first
+    end.flatten.sort
   end
 
   def find_category(sym, hash)
@@ -53,9 +54,14 @@ private
   end
 
   def find_see_alsos(sym)
-    [SEMANTIC_ASSOCIATIONS].map do |page|
+    links = [SEMANTIC_ASSOCIATIONS].map do |page|
       page.ref_links(sym)
     end.flatten
+
+    links.push ViewUtils.singletons_link if SINGLETONS.include?(sym)
+    links.push ViewUtils.unseen_link if UNSEEN.include?(sym)
+
+    links
   end
 
   def find_phrases(sym)

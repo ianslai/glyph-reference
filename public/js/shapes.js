@@ -8,6 +8,7 @@ var Shapes = function() {
         'attack': [2, 6, 0, 9, 4],
         'avoid': [1, 0, 9, 5, 8],
         'barrier': [0, 10, 8, 4],
+        'begin': [0, 7, 3, 8],
         'body': [6, 9, 10, 6],
         'capture': [5, 8, 10, 7, 2, 3],
         'change': [7, 10, 3, 8],
@@ -47,6 +48,7 @@ var Shapes = function() {
         'help': [1, 6, 10, 7, 8],
         'hide': [6, 9, 5, 8, 7],
         'human': [3, 7, 6, 9, 8, 3],
+        'i': [6, 9, 3, 6],
         'idea': [7, 2, 1, 6, 10, 8, 4, 5, 9],
         'ignore': [8, 4],
         'imperfect': [9, 10, 7, 6, 10],
@@ -54,6 +56,7 @@ var Shapes = function() {
         'impure': [10, 7, 6, 10, 3],
         'inside': [6, 9, 8],
         'journey': [5, 9, 10, 6, 1, 2, 3],
+        'knowledge': [6, 3, 9, 10, 6],
         'lead': [0, 1, 2, 7, 3],
         'less': [6, 10, 9],
         'liberate': [0, 5, 9, 10, 6, 2],
@@ -93,35 +96,46 @@ var Shapes = function() {
         'self': [2, 3, 4],
         'separate': [1, 6, 7, 10, 9, 8, 4],
         'shapers': [2, 7, 6, 0, 9, 8, 4],
+        'share': [4, 8, 7, 2, 3],
         'simple': [7, 8],
         'soul': [9, 10, 3, 8, 9],
         'stay': [2, 7, 8, 4],
         'success': [0, 10, 6, 7],
         'strong': [6, 9, 8, 7, 6],
+        'them': [0, 7, 8],
         'together': [10, 6, 9, 10, 7, 2],
         'truth': [6, 10, 9, 8, 10, 7, 6],
         'unknown': [],
+        'us': [6, 9, 3],
         'use': [10, 8, 5],
         'want': [2, 7, 3, 8],
         'weak': [1, 6, 9, 8],
-        'xm': [10, 7, 6, 9, 8, 10]
+        'xm': [10, 7, 6, 9, 8, 10],
+        'you': [0, 7, 8, 0]
     };
 
     var synonyms = {
         'accept': 'open',
         'balance': 'perfection',
         'breathe': 'live',
+        'creativity': 'idea',
+        'contract': 'reduce',
         'evolution': 'success',
         'harmony': 'peace',
+        'individual': 'self',
+        'me': 'i',
         'not': 'inside',
         'now': 'present',
         'outside': 'distance',
         'progress': 'success',
+        'recharge': 'repair',
         'repeat': 'again',
         'thought': 'idea',
         'stability': 'stay',
         'struggle': 'resistance',
-        'war': 'attack'
+        'war': 'attack',
+        'we': 'us',
+        'your': 'you'
     };
 
     for (key in synonyms) {

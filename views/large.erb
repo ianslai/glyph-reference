@@ -1,13 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <title>Glyph Reference: Alphabetical listing</title>
+    <title>Glyph Reference: <%= @title %></title>
     <%= erb :header %>
   </head>
   <body>
 
     <div id="content">
-      <h1>Alphabetical listing of glyphs</h1>
+      <h1><%= @header %></h1>
+
+      <% if @desc then %>
+      <p><%= @desc %></p>
+      <% end %>
 
       <div id="alpha">
         <% @glyphs.each do |glyph| %>

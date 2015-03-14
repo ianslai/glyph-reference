@@ -30,4 +30,16 @@ class ViewUtils
     text.gsub(GLYPH_TOKEN) { ViewUtils.link($1) }
   end
 
+  def self.singletons_link()
+    link = <<-EOL
+    <a href="/singletons">Singletons</a>
+    EOL
+  end
+
+  def self.unseen_link()
+    link = <<-EOL
+    <a href="/unseen">Unseen</a>
+    EOL
+  end
+
 end

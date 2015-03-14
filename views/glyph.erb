@@ -17,12 +17,13 @@
       <% end %>
 
       <% unless @glyph.homographs.empty? %>
-        <p>Homographs:
+        <p>Homograph<%= @glyph.homographs.size > 1 ? 's' : '' %>:
         <%= @glyph.homographs.map {|hgraph| ViewUtils.link(hgraph)}.join(',') %>
       <% end %>
 
-      <% if @glyph.antonym %>
-        <p>Antonym: <%= ViewUtils.link(@glyph.antonym) %>
+      <% unless @glyph.antonyms.empty? %>
+        <p>Antonym<%= @glyph.antonyms.size > 1 ? 's' : '' %>:
+        <%= @glyph.antonyms.map {|hgraph| ViewUtils.link(hgraph)}.join(',') %>
       <% end %>
 
       <% if @glyph.shape %>

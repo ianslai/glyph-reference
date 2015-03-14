@@ -1,4 +1,3 @@
-
 GLYPHS = %{
   accept
   advance
@@ -9,6 +8,7 @@ GLYPHS = %{
   avoid
   balance
   barrier
+  begin
   body
   breathe
   capture
@@ -20,8 +20,10 @@ GLYPHS = %{
   complex
   conflict
   contemplate
+  contract
   courage
   create
+  creativity
   danger
   data
   defend
@@ -51,19 +53,23 @@ GLYPHS = %{
   help
   hide
   human
+  i
   idea
   ignore
   imperfect
   improve
   impure
+  individual
   inside
   journey
+  knowledge
   lead
   less
   liberate
   lie
   live
   lose
+  me
   message
   mind
   more
@@ -89,6 +95,7 @@ GLYPHS = %{
   question
   react
   rebel
+  recharge
   reduce
   repair
   repeat
@@ -102,6 +109,7 @@ GLYPHS = %{
   self
   separate
   shapers
+  share
   simple
   soul
   stability
@@ -109,12 +117,17 @@ GLYPHS = %{
   strong
   struggle
   success
+  them
   thought
   together
   truth
+  us
   use
   want
   war
+  we
   weak
   xm
+  you
+  your
 }.split.map {|word| word.strip.to_sym }
