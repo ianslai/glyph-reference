@@ -46,6 +46,7 @@ ANTONYMS = [
   [:past, :future],
   [:gain, :lose],
   [:pure, :impure],
+  [:mind, :soul],
   [:less, :more],
   [:civilization, :nature],
   [:old, :new],

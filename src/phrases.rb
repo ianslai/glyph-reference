@@ -14,3 +14,16 @@ PHRASES_REF = PHRASES.inject({}) do |hash, phrase|
   end
   hash
 end
+
+GROUP_PHRASES = lambda {|divider|
+  categories = PHRASES.inject({}) do |hash, phrase|
+    key = divider.call(phrase)
+    hash[key] ||= []
+    hash[key].push phrase
+    hash
+  end
+  Hash[categories.sort]
+}
+
+PHRASES_BY_LENGTH = GROUP_PHRASES.call(lambda {|phrase| phrase.size})
+PHRASES_BY_START = GROUP_PHRASES.call(lambda {|phrase| phrase.first})

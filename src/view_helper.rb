@@ -42,4 +42,25 @@ class ViewUtils
     EOL
   end
 
+  def self.phrase_link(phrase)
+    glyphs = phrase.map do |glyph|
+      uri = "/glyphs/#{glyph}"
+      link = <<-EOL
+      <a href="#{uri}" class="glyph-link"><span class="mini-glyph" data-name="#{glyph}"></span></a>
+      EOL
+      link.strip
+    end.join("")
+
+    text = phrase.map do |glyph|
+      uri = "/glyphs/#{glyph}"
+      text = glyph.to_s.downcase
+      link = <<-EOL
+      <a href="#{uri}" class="glyph-link"><span class="glyph-name">#{text}</span></a>
+      EOL
+      link.strip
+    end.join(" ")
+
+    "#{glyphs} #{text}"
+  end
+
 end

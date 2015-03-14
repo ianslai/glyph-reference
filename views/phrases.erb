@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Glyph Reference: Phrases By Length</title>
+    <%= erb :header %>
+  </head>
+  <body>
+
+    <div id="content">
+      <h1>Phrases by Length</h1>
+
+      <ul>
+      <% @phrases.each do |length, phrases| %>
+        <li><a href="#length<%= length %>"><%= length %>-glyph phrases</a>
+      <% end %>
+      </ul>
+
+      <% @phrases.each do |length, phrases| %>
+      <h2 id="length<%= length %>"><%= length %>-glyph phrases</h2>
+        <ul class="phrases">
+        <% phrases.each do |phrase| %>
+          <li><%= ViewUtils.phrase_link(phrase) %><br>
+        <% end %>
+        </ul>
+      <% end %>
+    </div>
+
+  </body>
+</html>

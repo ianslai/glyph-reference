@@ -43,9 +43,17 @@ li {
     margin-bottom: 0.5em;
 }
 
-/* Alphabetical listing */
+/* Phrase listing*/
 
-#alpha {
+ul.phrases {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Large glyph listing */
+
+#large {
     text-align: center;
 }
 
@@ -108,4 +116,3 @@ li {
         padding-top: 10px;
     }
 }
-

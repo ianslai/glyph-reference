@@ -68,3 +68,8 @@ get '/unseen/?' do
     'under other names.  If you have, please let me (somerian) know.'
   erb :large
 end
+
+get '/phrases/?' do
+  @phrases = PHRASES_BY_LENGTH
+  erb :phrases
+end
