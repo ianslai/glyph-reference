@@ -1,51 +1,61 @@
+Accept
 Accept human weak
 Advance civilization pursue shapers path
 Advance civilization repeat failure
 Advance human resistance
 Advance pure truth
 Again journey outside
+All XM liberate
 All chaos inside body
 All civilization chaos
-All XM liberate
-Answer repeat struggle
 Answer question discover difficult truth
+Answer repeat struggle
+Attach chaos
 Attack difficult future
-Attack resistance, pursue enlightened
 Attack enlightened pursue resistance
+Attack resistance, pursue enlightened
 Attack shapers chaos
 Attack shapers evolution
 Attack weak shapers lie
-Avoid chaos, avoid shapers lie
+Avoid XM message lie
 Avoid chaos repair potential war
 Avoid chaos soul
+Avoid chaos, avoid shapers lie
 Avoid complex conflict
 Avoid destiny lie
 Avoid perfection stay human self
 Avoid war chaos
-Avoid XM message lie
 Balance
+Barrier
+Body
 Breathe again journey again
 Breathe inside XM lose self
 Breathe nature perfection harmony
+Capture XM
 Capture XM portal
 Capture fear discover courage
 Capture portal defend portal courage
 Capture shapers portal
+Change
 Change future capture destiny
 Change human potential use
 Chaos barrier shapers portal
 Chaos war conflict discover peace
 Civilization
 Civilization war chaos
-Clear-all thought past present future
-Clear-all open-all discover truth
+Civilization weak
 Clear mind liberate barrier body
 Clear mind open mind
+Clear-all open-all discover truth
+Clear-all thought past present future
+Complex
 Complex journey future
 Complex shapers civilization strong
+Complex truth
+Conflict
 Contemplate complex shapers civilization
 Contemplate complex shapers truth
-Contemplate future inside shapers path
+Contemplate future not shapers path
 Contemplate journey outside
 Contemplate potential perfection
 Contemplate restraint discover more courage
@@ -53,13 +63,17 @@ Contemplate self path truth
 Courage attack shapers portal together
 Courage destiny rebel
 Courage war shapers future
+Create
 Create distance impure path
 Create future change destiny
 Create future journey
 Create future not war
 Create pure future human civilization
+Create pure future not war
 Create separate path end journey
+Creativity
 Danger change past
+Defend
 Defend destiny defend human civilization
 Defend human civilization XM message
 Defend human civilization shapers lie
@@ -75,12 +89,16 @@ Destroy difficult barrier
 Destroy impure truth
 Destroy lie inside gain soul
 Deteriorate human weak rebel
+Die
+Discover
 Discover pure truth
+Discover resistance
 Discover resistance truth
 Discover safety civilization
 Discover shapers lie
 Discover shapers message
 Distance self avoid human lie
+Easy
 Easy path future follow shapers
 End journey discover destiny
 End old civilization create new
@@ -94,6 +112,7 @@ Fear chaos XM
 Follow
 Follow pure journey
 Follow shapers portal message
+Forget
 Forget conflict accept war
 Forget past see present danger
 Forget war see distance harmony
@@ -102,12 +121,15 @@ Future equal past
 Gain
 Gain civilization peace
 Gain future escape
+Gain peace
 Gain portal attack weak
 Gain truth open human soul
 Grow
+Harm
 Harm danger avoid
 Harm progress pursue more war
 Harmony
+Have
 Help gain create pursue
 Help human civilization pursue destiny
 Help shapers create future
@@ -116,6 +138,7 @@ Hide impure human thought
 Hide journey truth
 Hide path future
 Hide struggle advance strong together
+Human
 Human gain safety
 Human have impure civilization
 Human not together civilization deteriorate
@@ -123,31 +146,37 @@ Human past present future
 Human shapers together create destiny
 Human soul strong, pure
 Human weak
+Idea
 Ignore human chaos lie
 Imperfect XM message human chaos
 Imperfect truth accept complex answer
+Improve
 Improve advance present
 Improve body mind soul
 Improve body pursue journey
 Improve future together
 Improve human shapers
 Improve mind journey inside
+Impure
+Individual
+Inside XM truth
 Inside mind future
 Inside mind inside soul harmony
 Inside mind journey perfection
-Inside XM truth
 Journey inside improve soul
 Journey inside soul
+Lead
 Lead enlightened civilization
 Lead pursue react defend
 Lead resistance question
 Less chaos more stability
 Less soul more mind
 Less truth, more chaos
+Liberate
+Liberate XM portal together
 Liberate human
 Liberate human future
 Liberate portal potential
-Liberate XM portal together
 Liberate self liberate human civilization
 Lose attack retreat
 Lose danger gain safety
@@ -158,13 +187,17 @@ Mind open live
 More data gain portal advance
 Nature pure defend
 Nourish
-Nourish journey
 Nourish XM create thought
 Nourish XM portal
+Nourish journey
+Nourish truth
+Now
+Old
 Old nature less strong now
+Open mind liberate barrier body
 Open-all portal success
 Open-all simple truth
-Open mind liberate barrier body
+Past
 Past again present again
 Past chaos create future harmony
 Past equal future
@@ -173,6 +206,7 @@ Path peace difficult
 Path restraint strong safety
 Peace path nourish present
 Peace simple journey
+Peace stability
 Peace stability future
 Perfection balance safety all
 Perfection path peace
@@ -186,18 +220,26 @@ Portal potential help human future
 Potential
 Potential XM peace
 Potential XM war
+Present
 Present chaos create future civilization
+Progress
+Pure chaos
 Pure human failure now chaos
+Pure lie
 Pursue complex truth
 Pursue conflict war advance chaos
 Pursue pure body
+Question
+Question all
 Question conflict data
 Question hide truth
 Question impure evolution
 Question less, forget all lie
+Question shapers
 Question shapers chaos
 Question shapers harm
 Question truth gain future
+Question war
 React impure civilization
 React rebel question shapers lie
 Rebel thought evolution destiny now
@@ -206,29 +248,33 @@ Repair
 Repair nature balance
 Repair present repair human soul
 Repair soul less human harm
-Struggle defend shapers danger
-Struggle improve human soul
+Resistance
 Restraint fear avoid danger
 Restraint path, gain harmony
 Retreat search safety
+Safety
 Save human civilization destroy portal
-Search data discover path
+Search
 Search XM portal
 Search XM save portal
-Search truth, save civilization
+Search data discover path
 Search destiny create pure future
+Search potential
+Search shapers
+Search truth, save civilization
 See truth now
 See truth, see future
 Separate future evolution
 Separate mind body discover enlightened
 Separate truth lie shapers future
+Separate war
 Separate weak ignore truth
 Shapers
 Shapers chaos pure harm
 Shapers have strong path
 Shapers lead human complex journey
-Shapers mind complex harmony
 Shapers message end civilization
+Shapers mind complex harmony
 Shapers portal message destroy civilization
 Shapers portal mind restraint
 Shapers see complex path destiny
@@ -242,6 +288,7 @@ Simple truth breathe nature
 Simple truth forget easy success
 Simple truth shapers destroy civilization
 Soul rebel human die
+Stay
 Stay strong together defend resistance
 Stay together defend truth
 Strong idea pursue truth
@@ -251,9 +298,11 @@ Strong together attack together chaos
 Strong together attack together destiny
 Strong together avoid war
 Struggle defend shapers danger
+Struggle improve human soul
 Together discover harmony equal
 Together pure journey
 Together pursue safety
+Together strong
 Truth
 Truth idea discover XM
 Truth nourish soul
@@ -263,6 +312,7 @@ Want truth now
 Want truth pursue difficult path
 War create danger
 War destroy future
+War difficult
 Weak human destiny destroy civilization
 XM create complex human destiny
 XM die chaos live
