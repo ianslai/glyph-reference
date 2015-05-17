@@ -223,7 +223,6 @@ UNSEEN = [
   :contract,
   :i,
   :me,
-  :individual,
   :knowledge,
   :recharge,
   :them,
