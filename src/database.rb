@@ -224,7 +224,6 @@ UNSEEN = [
   :i,
   :me,
   :knowledge,
-  :recharge,
   :them,
   :us,
   :we,

@@ -2,6 +2,7 @@ Accept
 Accept human weak
 Advance civilization pursue shapers path
 Advance civilization repeat failure
+Advance human enlightenment
 Advance human resistance
 Advance pure truth
 Again journey outside
@@ -28,6 +29,7 @@ Avoid war chaos
 Balance
 Barrier
 Body
+Breathe
 Breathe again journey again
 Breathe inside XM lose self
 Breathe nature perfection harmony
@@ -95,6 +97,7 @@ Discover pure truth
 Discover resistance
 Discover resistance truth
 Discover safety civilization
+Discover shapers enlightenment
 Discover shapers lie
 Discover shapers message
 Distance self avoid human lie
@@ -108,6 +111,9 @@ Escape impure evolution
 Escape impure future
 Escape shapers harm
 Escape simple human future
+Evolution
+Failure
+Fear
 Fear chaos XM
 Follow
 Follow pure journey
@@ -243,16 +249,19 @@ Question war
 React impure civilization
 React rebel question shapers lie
 Rebel thought evolution destiny now
+Recharge
 Reduce
 Repair
 Repair nature balance
 Repair present repair human soul
 Repair soul less human harm
+Repeat
 Resistance
 Restraint fear avoid danger
 Restraint path, gain harmony
 Retreat search safety
 Safety
+Save
 Save human civilization destroy portal
 Search
 Search XM portal
@@ -306,6 +315,7 @@ Together strong
 Truth
 Truth idea discover XM
 Truth nourish soul
+Use
 Use mind use courage change
 Use restraint follow easy path
 Want truth now
