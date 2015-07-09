@@ -37,6 +37,7 @@ GLYPHS = %{
   easy
   end
   enlightened
+  enlightenment
   equal
   escape
   evolution

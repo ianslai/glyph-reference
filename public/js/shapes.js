@@ -120,6 +120,7 @@ var Shapes = function() {
         'breathe': 'live',
         'creativity': 'idea',
         'contract': 'reduce',
+        'enlightenment': 'enlightened',
         'evolution': 'success',
         'harmony': 'peace',
         'individual': 'self',

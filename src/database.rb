@@ -40,7 +40,7 @@ ANTONYMS = [
   [:easy, :difficult],
   [:grow, [:contract, :reduce]],
   [:outside, :inside],
-  [:enlightened, :resistance],
+  [[:enlightened, :enlightenment], :resistance],
   [:success, :failure],
   [:lead, :follow],
   [:past, :future],
@@ -129,7 +129,7 @@ SHAPE_TYPES = {
 
   :spiral => {
     :desc => "Spiral",
-    :glyphs => [[:search, :contemplate, :enlightened]],
+    :glyphs => [[:search, :contemplate, :enlightened, :enlightenment]],
   },
 
   :bowtie => {
@@ -167,7 +167,7 @@ SEGMENTS = {
   5 => [:again, :capture, :civilization, :conflict, :destiny, :end, :human,
         :liberate, :lie, :nature, :rebel, :resistance, :restraint, :together, :xm],
   6 => [:all, :harm, :journey, :separate, :shapers, :truth],
-  7 => [:chaos, :contemplate, :enlightened, :perfection],
+  7 => [:chaos, :contemplate, :enlightened, :enlightenment, :perfection],
   8 => [:"clear-all", :idea, :peace, :portal],
   9 => [:"open-all"],
 }
