@@ -88,7 +88,7 @@ SHAPE_TYPES = {
     :desc => "Hook",
     :glyphs => [
       [:save, :weak, :answer, :fear, :courage],
-      [:danger, :question, :escape, :help],
+      [:danger, :question, :escape, :help, :intelligence],
       [:capture, :liberate, :lead],
     ],
   },
@@ -129,7 +129,7 @@ SHAPE_TYPES = {
 
   :spiral => {
     :desc => "Spiral",
-    :glyphs => [[:search, :contemplate, :enlightened, :enlightenment]],
+    :glyphs => [[:search, :contemplate, :enlightened, :enlightenment, :unbounded]],
   },
 
   :bowtie => {
@@ -144,7 +144,8 @@ SHAPE_TYPES = {
     :desc => "Complex",
     :glyphs => [
       [:chaos, :journey, :hide,],
-      [:shapers, :civilization, :nature, :conflict, :difficult],
+      [:shapers, :civilization, :nature, :conflict,],
+      [:difficult, :intelligence, :technology,],
       [:separate, :destiny, :resistance, :struggle, ],
     ],
   },
@@ -203,7 +204,6 @@ SINGLETONS = [
   :begin,
   :creativity,
   :contract,
-  :grow,
   :i,
   :me,
   :individual,

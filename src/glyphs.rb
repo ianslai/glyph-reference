@@ -62,6 +62,7 @@ GLYPHS = %{
   impure
   individual
   inside
+  intelligence
   journey
   knowledge
   lead
@@ -118,10 +119,12 @@ GLYPHS = %{
   strong
   struggle
   success
+  technology
   them
   thought
   together
   truth
+  unbounded
   us
   use
   want
