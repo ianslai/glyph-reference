@@ -53,7 +53,7 @@ get '/semantic/?' do
 end
 
 get '/singletons/?' do
-  @glyphs = SINGLETONS.sort
+  @glyphs = SINGLETONS.sort.map {|sym| GlyphEntry.lookup(sym)}
   @title = @header = 'Singletons'
   @desc = 'These glyphs have only been seen in the wild as singletons, i.e. ' +
     'alone as a single-glyph phrase.'
@@ -61,7 +61,7 @@ get '/singletons/?' do
 end
 
 get '/unseen/?' do
-  @glyphs = UNSEEN.sort
+  @glyphs = UNSEEN.sort.map {|sym| GlyphEntry.lookup(sym)}
   @title = @header = 'Unseen glyphs'
   @desc = 'Although these glyphs appear on the official reference that came out on the Ingress ' +
     'Google+ account, I have not seen these glyphs in the wild, or have seen the shapes only ' +
