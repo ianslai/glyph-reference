@@ -18,7 +18,7 @@ get '/test/?' do
 end
 
 get '/glyphs/?' do
-  @glyphs = GLYPHS.sort
+  @glyphs = GLYPHS.sort.map {|sym| GlyphEntry.lookup(sym)}
   @title = 'Alphabetical listing'
   @header = 'Alphabetical listing of glyphs'
   erb :large

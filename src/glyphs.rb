@@ -1,4 +1,5 @@
 GLYPHS = %{
+  abandon
   accept
   advance
   again
@@ -66,6 +67,7 @@ GLYPHS = %{
   journey
   knowledge
   lead
+  legacy
   less
   liberate
   lie
@@ -80,6 +82,7 @@ GLYPHS = %{
   not
   nourish
   now
+  nzeer
   old
   open
   open-all
@@ -88,6 +91,7 @@ GLYPHS = %{
   path
   peace
   perfection
+  perspective
   portal
   potential
   present

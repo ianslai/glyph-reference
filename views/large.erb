@@ -15,10 +15,10 @@
 
       <div id="large">
         <% @glyphs.each do |glyph| %>
-          <a href="/glyphs/<%= glyph %>">
+          <a href="/glyphs/<%= glyph.symbol %>">
             <div class="glyph-container">
-              <div class="glyph" data-name="<%= glyph %>"></div><br>
-              <span class="glyph-name"><%= glyph.downcase %></span>
+              <div class="glyph" data-name="<%= glyph.symbol %>"></div><br>
+              <span class="glyph-name"><%= glyph.title.downcase %></span>
             </div>
           </a>
         <% end %>

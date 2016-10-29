@@ -16,7 +16,7 @@ private
   def initialize(sym)
     @symbol = sym
     @homographs = find_homographs(sym)
-    @title = sym.to_s.upcase
+    @title = ViewUtils.display_name(sym).upcase
     @antonyms = find_antonyms(sym)
     @desc = DESCRIPTIONS.section(sym)
     @shape = find_category(sym, SHAPE_TYPES)

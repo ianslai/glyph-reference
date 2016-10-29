@@ -1,6 +1,7 @@
 var Shapes = function() {
 
     var pointMap = {
+        'abandon': [5, 9, 10, 7, 2, 3],
         'all': [0, 1, 2, 3, 4, 5, 0],
         'again': [2, 6, 7, 10, 9, 8],
         'advance': [0, 6, 2],
@@ -59,6 +60,7 @@ var Shapes = function() {
         'journey': [5, 9, 10, 6, 1, 2, 3],
         'knowledge': [6, 3, 9, 10, 6],
         'lead': [0, 1, 2, 7, 3],
+        'legacy': [2, 7, 6, 1, 0, 5, 9, 8, 4],
         'less': [6, 10, 9],
         'liberate': [0, 5, 9, 10, 6, 2],
         'lie': [7, 6, 10, 8, 9, 10],
@@ -70,6 +72,7 @@ var Shapes = function() {
         'nature': [2, 7, 6, 9, 8, 4],
         'new': [9, 8, 4],
         'nourish': [10, 7, 2, 3, 10],
+        'nzeer': [0, 6, 10, 9, 0, 10, 3],
         'old': [1, 6, 7],
         'open': [7, 8, 3, 7],
         'open-all': [3, 7, 8, 3, 4, 5, 0, 1, 2, 3],
@@ -77,6 +80,7 @@ var Shapes = function() {
         'path': [0, 10, 7, 2],
         'peace': [0, 6, 10, 8, 3, 7, 10, 9, 0],
         'perfection': [0, 10, 7, 2, 3, 4, 8, 10],
+        'perspective': [2, 7, 10, 9, 0, 6, 10, 8, 4],
         'portal': [1, 2, 7, 8, 4, 5, 9, 6, 1],
         'potential': [0, 10, 8, 4, 5],
         'present': [6, 7, 8, 9],

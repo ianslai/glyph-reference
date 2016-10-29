@@ -24,6 +24,7 @@ HOMOGRAPHS = [
 
 # Glyphs with opposite meanings
 ANTONYMS = [
+  [:abandon, :restraint],
   [:begin, :end],
   [:peace, :war],
   [:attack, :defend],
@@ -81,6 +82,7 @@ SHAPE_TYPES = {
       [:past, :present, :now, :equal, :future],
       [:safety, :stability, :stay,],
       [:discover, :potential, :have, :begin, :share],
+      [:legacy],
     ],
   },
 
@@ -118,13 +120,17 @@ SHAPE_TYPES = {
       [:grow, :reduce, :contract],
       [:distance, :outside, :path, :barrier, :easy],
       [:deteriorate, :improve, :react, :use],
-      [:restraint, :them, :us, :we],
+      [:abandon, :restraint, :them, :us, :we],
     ],
   },
 
   :wand => {
     :desc => "Wand",
-    :glyphs => [[:balance, :perfection, :harm, :impure, :pure, :imperfect, :together]],
+    :glyphs => [
+      [:balance, :perfection, :harm,],
+      [:impure, :pure, :imperfect, :together,],
+      [:nzeer,],
+    ],
   },
 
   :spiral => {
@@ -143,9 +149,10 @@ SHAPE_TYPES = {
   :complex => {
     :desc => "Complex",
     :glyphs => [
-      [:chaos, :journey, :hide,],
+      [:chaos, :journey, :hide, :legacy,],
       [:shapers, :civilization, :nature, :conflict,],
       [:difficult, :intelligence, :technology,],
+      [:nzeer, :perspective,],
       [:separate, :destiny, :resistance, :struggle, ],
     ],
   },
@@ -165,11 +172,11 @@ SEGMENTS = {
   4 => [:attack, :avoid, :create, :data, :defend, :destroy, :die, :difficult, :escape,
         :help, :hide, :impure, :knowledge, :lead, :live, :message, :mind, :nourish,
         :potential, :pure, :react, :repair, :search, :share, :soul, :strong],
-  5 => [:again, :capture, :civilization, :conflict, :destiny, :end, :human,
+  5 => [:abandon, :again, :capture, :civilization, :conflict, :destiny, :end, :human,
         :liberate, :lie, :nature, :rebel, :resistance, :restraint, :together, :xm],
-  6 => [:all, :harm, :journey, :separate, :shapers, :truth],
+  6 => [:all, :harm, :journey, :nzeer, :separate, :shapers, :truth],
   7 => [:chaos, :contemplate, :enlightened, :enlightenment, :perfection],
-  8 => [:"clear-all", :idea, :peace, :portal],
+  8 => [:"clear-all", :idea, :legacy, :peace, :perspective, :portal],
   9 => [:"open-all"],
 }
 
@@ -201,32 +208,30 @@ SEGMENTS_CATEGORY = lambda {
 }.call
 
 SINGLETONS = [
-  :begin,
   :creativity,
   :contract,
   :i,
   :me,
   :individual,
-  :knowledge,
   :recharge,
   :reduce,
   :share,
   :them,
-  :us,
   :we,
   :you,
   :your,
 ]
 
 UNSEEN = [
-  :begin,
   :contract,
   :i,
   :me,
-  :knowledge,
   :them,
-  :us,
   :we,
   :you,
   :your,
 ]
+
+DISPLAY_NAMES = {
+ :nzeer => "N'Zeer", 
+}

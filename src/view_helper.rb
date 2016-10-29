@@ -4,7 +4,7 @@ require_relative 'textdata'
 class ViewUtils
   def self.link(glyph)
     uri = "/glyphs/#{glyph}"
-    text = glyph.to_s.downcase
+    text = display_name(glyph)
     link = <<-EOL
     <a href="#{uri}" class="glyph-link"><span class="mini-glyph" data-name="#{glyph}"></span>&nbsp;<span class="glyph-name">#{text}</span></a>
     EOL
@@ -20,7 +20,7 @@ class ViewUtils
 
   def self.large_link(glyph)
     uri = "/glyphs/#{glyph}"
-    text = glyph.to_s.downcase
+    text = display_name(glyph)
     link = <<-EOL
     <a href="#{uri}" class="glyph-link"><div class="glyph" data-name="#{glyph}"></div><span class="glyph-name">#{text}</span></a>
     EOL
@@ -53,7 +53,7 @@ class ViewUtils
 
     text = phrase.map do |glyph|
       uri = "/glyphs/#{glyph}"
-      text = glyph.to_s.downcase
+      text = display_name(glyph)
       link = <<-EOL
       <a href="#{uri}" class="glyph-link"><span class="glyph-name">#{text}</span></a>
       EOL
@@ -63,4 +63,7 @@ class ViewUtils
     "#{glyphs} #{text}"
   end
 
+  def self.display_name(glyph)
+    (DISPLAY_NAMES[glyph.to_sym] || glyph.to_s).downcase
+  end
 end
