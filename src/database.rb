@@ -118,7 +118,7 @@ SHAPE_TYPES = {
       [:live, :breathe, :die, :self, :individual],
       [:more, :less, :old, :new, :inside, :not],
       [:grow, :reduce, :contract],
-      [:distance, :outside, :path, :barrier, :easy],
+      [:distance, :outside, :path, :barrier, :destination, :easy],
       [:deteriorate, :improve, :react, :use],
       [:abandon, :restraint, :them, :us, :we],
     ],
@@ -165,7 +165,7 @@ SHAPE_TYPES = {
 
 SEGMENTS = {
   1 => [:forget, :gain, :ignore, :lose, :see, :simple],
-  2 => [:advance, :clear, :distance, :grow, :inside, :less, :more, :new, :old, :reduce, :retreat, :self, :them, :use],
+  2 => [:advance, :clear, :distance, :outside, :destination, :grow, :inside, :less, :more, :new, :old, :reduce, :retreat, :self, :them, :use],
   3 => [:answer, :barrier, :begin, :body, :change, :complex, :courage, :danger, :deteriorate, :discover,
         :easy, :equal, :failure, :fear, :follow, :future, :have, :i, :improve, :open, :past, :path,
         :present, :pursue, :question, :safety, :save, :stay, :success, :want, :weak, :you],

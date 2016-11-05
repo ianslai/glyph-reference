@@ -28,6 +28,7 @@ GLYPHS = %{
   danger
   data
   defend
+  destination
   destiny
   destroy
   deteriorate

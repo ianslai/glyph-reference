@@ -25,6 +25,7 @@ var Shapes = function() {
         'danger': [0, 6, 10, 3],
         'data': [0, 9, 10, 7, 3],
         'defend': [1, 7, 3, 8, 5],
+        'destination': [5, 4, 3],
         'destiny': [6, 10, 9, 8, 7, 3],
         'destroy': [1, 6, 10, 8, 4],
         'deteriorate': [6, 10, 7, 2],
