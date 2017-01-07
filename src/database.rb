@@ -4,6 +4,7 @@ HOMOGRAPHS = [
   [:accept, :open],
   [:balance, :perfection],
   [:breathe, :live],
+  [:die, :death],
   [:evolution, :progress, :success],
   [:harmony, :peace],
   [:i, :me],
@@ -26,6 +27,7 @@ HOMOGRAPHS = [
 ANTONYMS = [
   [:abandon, :restraint],
   [:begin, :end],
+  [:before, :after],
   [:peace, :war],
   [:attack, :defend],
   [:advance, :retreat],
@@ -69,10 +71,10 @@ SHAPE_TYPES = {
   :polygonal => {
     :desc => "Polygonal",
     :glyphs => [
-      [:accept, :open, :nourish, :repair, :recharge],
+      [:accept, :after, :before, :open, :nourish, :repair, :recharge],
       [:i, :me, :you, :your],
       [:mind, :body, :soul, :end],
-      [:strong, :knowledge, :human, :xm, :all],
+      [:strong, :victory, :knowledge, :human, :xm, :all],
     ],
   },
 
@@ -89,7 +91,7 @@ SHAPE_TYPES = {
   :hook => {
     :desc => "Hook",
     :glyphs => [
-      [:save, :weak, :answer, :fear, :courage],
+      [:adapt, :save, :weak, :answer, :fear, :courage],
       [:danger, :question, :escape, :help, :intelligence],
       [:capture, :liberate, :lead],
     ],
@@ -151,6 +153,7 @@ SHAPE_TYPES = {
     :glyphs => [
       [:chaos, :journey, :hide, :legacy,],
       [:shapers, :civilization, :nature, :conflict,],
+      [:interrupt, :mystery,],
       [:difficult, :intelligence, :technology,],
       [:nzeer, :perspective,],
       [:separate, :destiny, :resistance, :struggle, ],
@@ -159,23 +162,23 @@ SHAPE_TYPES = {
 
   :compound => {
     :desc => "Compound",
-    :glyphs => [[:'clear-all', :'open-all', ]],
+    :glyphs => [[:'clear-all', :'open-all', :interrupt,]],
   },
 }
 
 SEGMENTS = {
   1 => [:forget, :gain, :ignore, :lose, :see, :simple],
   2 => [:advance, :clear, :distance, :outside, :destination, :grow, :inside, :less, :more, :new, :old, :reduce, :retreat, :self, :them, :use],
-  3 => [:answer, :barrier, :begin, :body, :change, :complex, :courage, :danger, :deteriorate, :discover,
+  3 => [:adapt, :answer, :barrier, :begin, :body, :change, :complex, :courage, :danger, :deteriorate, :discover,
         :easy, :equal, :failure, :fear, :follow, :future, :have, :i, :improve, :open, :past, :path,
         :present, :pursue, :question, :safety, :save, :stay, :success, :want, :weak, :you],
   4 => [:attack, :avoid, :create, :data, :defend, :destroy, :die, :difficult, :escape,
         :help, :hide, :impure, :knowledge, :lead, :live, :message, :mind, :nourish,
-        :potential, :pure, :react, :repair, :search, :share, :soul, :strong],
-  5 => [:abandon, :again, :capture, :civilization, :conflict, :destiny, :end, :human,
+        :potential, :pure, :react, :repair, :search, :share, :soul, :strong, :victory],
+  5 => [:abandon, :after, :again, :before, :capture, :civilization, :conflict, :destiny, :end, :human,
         :liberate, :lie, :nature, :rebel, :resistance, :restraint, :together, :xm],
   6 => [:all, :harm, :journey, :nzeer, :separate, :shapers, :truth],
-  7 => [:chaos, :contemplate, :enlightened, :enlightenment, :perfection],
+  7 => [:chaos, :contemplate, :enlightened, :enlightenment, :interrupt, :perfection],
   8 => [:"clear-all", :idea, :legacy, :peace, :perspective, :portal],
   9 => [:"open-all"],
 }
@@ -218,8 +221,6 @@ SINGLETONS = [
   :share,
   :them,
   :we,
-  :you,
-  :your,
 ]
 
 UNSEEN = [
@@ -228,8 +229,6 @@ UNSEEN = [
   :me,
   :them,
   :we,
-  :you,
-  :your,
 ]
 
 DISPLAY_NAMES = {

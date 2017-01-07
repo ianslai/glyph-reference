@@ -1,7 +1,9 @@
 GLYPHS = %{
   abandon
   accept
+  adapt
   advance
+  after
   again
   all
   answer
@@ -9,6 +11,7 @@ GLYPHS = %{
   avoid
   balance
   barrier
+  before
   begin
   body
   breathe
@@ -27,6 +30,7 @@ GLYPHS = %{
   creativity
   danger
   data
+  death
   defend
   destination
   destiny
@@ -65,6 +69,7 @@ GLYPHS = %{
   individual
   inside
   intelligence
+  interrupt
   journey
   knowledge
   lead
@@ -78,6 +83,7 @@ GLYPHS = %{
   message
   mind
   more
+  mystery
   nature
   new
   not
@@ -132,6 +138,7 @@ GLYPHS = %{
   unbounded
   us
   use
+  victory
   want
   war
   we
