@@ -93,14 +93,14 @@ SHAPE_TYPES = {
     :glyphs => [
       [:adapt, :save, :weak, :answer, :fear, :courage],
       [:danger, :question, :escape, :help, :intelligence],
-      [:capture, :liberate, :lead],
+      [:capture, :liberate, :lead, :'live-again'],
     ],
   },
 
   :em => {
     :desc => "M-shaped",
     :glyphs => [
-      [:again, :repeat, :avoid],
+      [:again, :repeat, :avoid, :worth],
     ],
   },
 
@@ -154,15 +154,15 @@ SHAPE_TYPES = {
       [:chaos, :journey, :hide, :legacy,],
       [:shapers, :civilization, :nature, :conflict,],
       [:interrupt, :mystery,],
-      [:difficult, :intelligence, :technology,],
-      [:nzeer, :perspective,],
+      [:consequence, :difficult, :intelligence, :technology,],
+      [:nzeer, :perspective, :presence],
       [:separate, :destiny, :resistance, :struggle, ],
     ],
   },
 
   :compound => {
     :desc => "Compound",
-    :glyphs => [[:'clear-all', :'open-all', :interrupt,]],
+    :glyphs => [[:'clear-all', :'open-all', :interrupt, :'live-again']],
   },
 }
 
@@ -172,13 +172,13 @@ SEGMENTS = {
   3 => [:adapt, :answer, :barrier, :begin, :body, :change, :complex, :courage, :danger, :deteriorate, :discover,
         :easy, :equal, :failure, :fear, :follow, :future, :have, :i, :improve, :open, :past, :path,
         :present, :pursue, :question, :safety, :save, :stay, :success, :want, :weak, :you],
-  4 => [:attack, :avoid, :create, :data, :defend, :destroy, :die, :difficult, :escape,
+  4 => [:attack, :avoid, :consequence, :create, :data, :defend, :destroy, :die, :difficult, :escape,
         :help, :hide, :impure, :knowledge, :lead, :live, :message, :mind, :nourish,
-        :potential, :pure, :react, :repair, :search, :share, :soul, :strong, :victory],
+        :potential, :pure, :react, :repair, :search, :share, :soul, :strong, :victory, :worth],
   5 => [:abandon, :after, :again, :before, :capture, :civilization, :conflict, :destiny, :end, :human,
-        :liberate, :lie, :nature, :rebel, :resistance, :restraint, :together, :xm],
+        :liberate, :lie, :'live-again', :nature, :rebel, :resistance, :restraint, :together, :xm],
   6 => [:all, :harm, :journey, :nzeer, :separate, :shapers, :truth],
-  7 => [:chaos, :contemplate, :enlightened, :enlightenment, :interrupt, :perfection],
+  7 => [:chaos, :contemplate, :enlightened, :enlightenment, :interrupt, :perfection, :presence],
   8 => [:"clear-all", :idea, :legacy, :peace, :perspective, :portal],
   9 => [:"open-all"],
 }
@@ -211,23 +211,17 @@ SEGMENTS_CATEGORY = lambda {
 }.call
 
 SINGLETONS = [
-  :creativity,
   :contract,
   :i,
   :me,
   :individual,
-  :recharge,
   :reduce,
-  :share,
-  :them,
   :we,
 ]
 
 UNSEEN = [
-  :contract,
   :i,
   :me,
-  :them,
   :we,
 ]
 

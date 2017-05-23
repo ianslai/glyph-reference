@@ -22,6 +22,7 @@ var Shapes = function() {
         'civilization': [1, 6, 7, 8, 9, 5],
         'complex': [9, 6, 10, 7],
         'conflict': [2, 6, 7, 8, 9, 4],
+        'consequence': [1, 6, 7, 8, 4],
         'contemplate': [9, 10, 6, 7, 3, 4, 5, 0],
         'courage': [2, 6, 7, 8],
         'create': [2, 7, 10, 9, 5],
@@ -71,6 +72,7 @@ var Shapes = function() {
         'liberate': [0, 5, 9, 10, 6, 2],
         'lie': [7, 6, 10, 8, 9, 10],
         'live': [1, 6, 10, 9, 5],
+        'live-again': [2, 6, 7, 10, 9, 5],
         'lose': [5, 8],
         'message': [2, 6, 10, 8, 5],
         'mind': [6, 7, 3, 10, 6],
@@ -90,6 +92,7 @@ var Shapes = function() {
         'perspective': [2, 7, 10, 9, 0, 6, 10, 8, 4],
         'portal': [1, 2, 7, 8, 4, 5, 9, 6, 1],
         'potential': [0, 10, 8, 4, 5],
+        'presence': [7, 6, 10, 9, 8, 7, 3, 8],
         'present': [6, 7, 8, 9],
         'pure': [0, 10, 8, 9, 10],
         'pursue': [1, 6, 0, 9],
@@ -125,6 +128,7 @@ var Shapes = function() {
         'victory': [0, 6, 3, 9, 0],
         'want': [2, 7, 3, 8],
         'weak': [1, 6, 9, 8],
+        'worth': [1, 7, 10, 8, 5],
         'xm': [10, 7, 6, 9, 8, 10],
         'you': [0, 7, 8, 0]
     };

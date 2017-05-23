@@ -23,6 +23,7 @@ GLYPHS = %{
   clear-all
   complex
   conflict
+  consequence
   contemplate
   contract
   courage
@@ -78,6 +79,7 @@ GLYPHS = %{
   liberate
   lie
   live
+  live-again
   lose
   me
   message
@@ -101,6 +103,7 @@ GLYPHS = %{
   perspective
   portal
   potential
+  presence
   present
   progress
   pure
@@ -143,6 +146,7 @@ GLYPHS = %{
   war
   we
   weak
+  worth
   xm
   you
   your
