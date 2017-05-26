@@ -21,6 +21,7 @@ GLYPHS = %{
   civilization
   clear
   clear-all
+  collective
   complex
   conflict
   consequence
