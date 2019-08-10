@@ -83,8 +83,10 @@ Conflict
 Conflict grow war
 Conflict grow war danger
 Consequence
+Contemplate chaos before link
 Contemplate complex shapers civilization
 Contemplate complex shapers truth
+Contemplate field pursue human legacy
 Contemplate future not shapers path
 Contemplate journey outside
 Contemplate potential perfection
@@ -110,6 +112,7 @@ Creativity
 Danger change past
 Defend
 Defend destiny defend human civilization
+Defend field gain victory
 Defend human civilization shapers lie
 Defend human civilization shapers portal
 Defend human civilization XM message
@@ -124,6 +127,7 @@ Destroy destiny barrier
 Destroy destiny human lie
 Destroy difficult barrier
 Destroy impure truth
+Destroy field capture key
 Destroy lie inside gain soul
 Destroy live-again
 Deteriorate human weak rebel
@@ -175,6 +179,7 @@ Gain peace
 Gain portal attack weak
 Gain truth open human soul
 Grow
+Grow body
 Grow collective presence
 Grow unbounded create new future
 Harm
@@ -216,10 +221,12 @@ Human past present future
 Human shapers together create destiny
 Human soul strong, pure
 Human soul unbounded
+Human success create more field
 Human unbounded escape all
 Human weak
 Idea
 Ignore human chaos lie
+Imperfect civilization lose key data
 Imperfect message begin human chaos
 Imperfect truth accept complex answer
 Imperfect XM message human chaos
@@ -247,6 +254,7 @@ Lead pursue react defend
 Lead resistance question
 Legacy
 Less chaos more stability
+Less shield more harm
 Less soul more mind
 Less truth, more chaos
 Liberate
@@ -255,6 +263,8 @@ Liberate human future
 Liberate portal potential
 Liberate self liberate human civilization
 Liberate XM portal together
+Link all portal create field
+Link key field success
 Live-again
 Live-again die repeat evolution
 Live-again die repeat evolution future
@@ -271,6 +281,7 @@ Nature pure defend
 Nourish
 Nourish journey
 Nourish truth
+Nourish portal avoid weak field
 Nourish XM create thought
 Nourish XM portal
 Now
@@ -283,6 +294,7 @@ NZeer technology perfection truth
 Old
 Old nature less strong now
 Open mind liberate barrier body
+Open-all link create star
 Open-all portal success
 Open-all simple truth
 Past
@@ -382,11 +394,15 @@ Shapers see complex path destiny
 Shapers see potential evolution
 Shapers want human mind future
 Shapers weak
+Share key save all
 Share resistance message
 Share enlightenment knowledge
+Shield defend human civilization
+Shield mind clear-all chaos XM
 Simple civilization impure, weak
 Simple message complex idea
 Simple old truth journey inside
+Simple truth all human star
 Simple truth breathe nature
 Simple truth forget easy success
 Simple truth shapers destroy civilization
@@ -396,6 +412,7 @@ Stay strong together defend resistance
 Stay together defend truth
 Strong idea pursue truth
 Strong resistance capture portal
+Strong portal strong field
 Strong soul
 Strong together attack together chaos
 Strong together attack together destiny
@@ -415,6 +432,7 @@ Truth
 Truth idea discover XM
 Truth nourish soul
 Use
+Use key together create star
 Use mind use courage change
 Use restraint follow easy path
 Want new destination ignore consequence
@@ -425,6 +443,7 @@ War destroy future
 War difficult
 War not worth consequence
 Weak human destiny destroy civilization
+Weak portal weak field
 Worth
 XM create complex human destiny
 XM die chaos live

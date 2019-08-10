@@ -51,6 +51,7 @@ GLYPHS = %{
   evolution
   failure
   fear
+  field
   follow
   forget
   future
@@ -73,12 +74,14 @@ GLYPHS = %{
   intelligence
   interrupt
   journey
+  key
   knowledge
   lead
   legacy
   less
   liberate
   lie
+  link
   live
   live-again
   lose
@@ -88,6 +91,7 @@ GLYPHS = %{
   more
   mystery
   nature
+  nemesis
   new
   not
   nourish
@@ -127,9 +131,11 @@ GLYPHS = %{
   separate
   shapers
   share
+  shield
   simple
   soul
   stability
+  star
   stay
   strong
   struggle
@@ -137,6 +143,7 @@ GLYPHS = %{
   technology
   them
   thought
+  toast
   together
   truth
   unbounded

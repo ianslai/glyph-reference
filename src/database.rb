@@ -65,7 +65,7 @@ SHAPE_TYPES = {
   :line => {
     :desc => "Linear",
     :glyphs => [
-      [:clear, :advance, :retreat, :create, :destroy,],
+      [:clear, :advance, :retreat, :create, :destroy, :link],
       [:simple, :see, :gain, :lose, :forget, :ignore],
     ],
   },
@@ -73,10 +73,10 @@ SHAPE_TYPES = {
   :polygonal => {
     :desc => "Polygonal",
     :glyphs => [
-      [:accept, :after, :before, :open, :nourish, :repair, :recharge],
+      [:accept, :after, :before, :open, :nourish, :repair, :recharge, :field],
       [:i, :me, :you, :your],
       [:mind, :body, :soul, :end],
-      [:strong, :victory, :knowledge, :human, :xm, :all],
+      [:strong, :victory, :knowledge, :human, :xm, :all, :shield, :toast],
     ],
   },
 
@@ -133,7 +133,7 @@ SHAPE_TYPES = {
     :glyphs => [
       [:balance, :perfection, :harm,],
       [:impure, :pure, :imperfect, :together,],
-      [:nzeer,],
+      [:key, :nzeer,],
     ],
   },
 
@@ -146,7 +146,8 @@ SHAPE_TYPES = {
     :desc => "Bowtie",
     :glyphs => [
       [:truth, :lie, :peace, :harmony],
-      [:portal, :creativity, :idea, :thought]
+      [:portal, :creativity, :idea, :thought],
+      [:nemesis],
     ],
   },
 
@@ -159,6 +160,7 @@ SHAPE_TYPES = {
       [:consequence, :difficult, :intelligence, :technology,],
       [:nzeer, :perspective, :presence],
       [:separate, :destiny, :resistance, :struggle, ],
+      [:star],
     ],
   },
 
@@ -169,7 +171,7 @@ SHAPE_TYPES = {
 }
 
 SEGMENTS = {
-  1 => [:forget, :gain, :ignore, :lose, :see, :simple],
+  1 => [:forget, :gain, :ignore, :link, :lose, :see, :simple],
   2 => [:advance, :clear, :distance, :outside, :destination, :grow, :inside, :less, :more, :new, :old, :reduce, :retreat, :self, :them, :use],
   3 => [:adapt, :answer, :barrier, :begin, :body, :change, :complex, :courage, :danger, :deteriorate, :discover,
         :easy, :equal, :failure, :fear, :follow, :future, :have, :i, :improve, :open, :past, :path,
@@ -177,12 +179,13 @@ SEGMENTS = {
   4 => [:attack, :avoid, :consequence, :create, :data, :defend, :destroy, :die, :difficult, :escape,
         :help, :hide, :impure, :knowledge, :lead, :live, :message, :mind, :nourish,
         :potential, :pure, :react, :repair, :search, :share, :soul, :strong, :victory, :worth],
-  5 => [:abandon, :after, :again, :before, :capture, :civilization, :conflict, :destiny, :end, :human,
+  5 => [:abandon, :after, :again, :before, :capture, :civilization, :conflict, :destiny, :end, :field, :human,
         :liberate, :lie, :'live-again', :nature, :rebel, :resistance, :restraint, :together, :xm],
-  6 => [:all, :collective, :harm, :journey, :nzeer, :separate, :shapers, :truth],
-  7 => [:chaos, :contemplate, :enlightened, :enlightenment, :interrupt, :perfection, :presence],
+  6 => [:all, :collective, :harm, :journey, :nzeer, :separate, :shapers, :shield, :toast, :truth],
+  7 => [:chaos, :contemplate, :enlightened, :enlightenment, :interrupt, :key, :perfection, :presence],
   8 => [:"clear-all", :idea, :legacy, :peace, :perspective, :portal],
   9 => [:"open-all"],
+  10 => [:nemesis, :star, :unbounded],
 }
 
 # include homographs in segments listing
@@ -199,6 +202,7 @@ SEGMENTS_CATEGORY = lambda {
       {
         :desc => "#{num} segment#{num > 1 ? 's' : ''}",
         :glyphs => [ glyphs ],
+        :sort_order => "%02d" % num,
       }
     ]
   }
@@ -207,9 +211,10 @@ SEGMENTS_CATEGORY = lambda {
     {
       :desc => "4 segments (sort of)",
       :glyphs => [[:imperfect]],
+      :sort_order => "04sortof",
     }
   ]
-  Hash[segments.sort]
+  Hash[segments.sort_by {|x| x[-1][:sort_order]}]
 }.call
 
 SINGLETONS = [
