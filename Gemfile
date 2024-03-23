@@ -5,3 +5,5 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 
 gem "rackup", "~> 2.1"
+
+gem "puma", "~> 6.4"
