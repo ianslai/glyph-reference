@@ -1,35 +1,45 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    base64 (0.2.0)
     multi_json (1.15.0)
-    mustermann (1.1.1)
+    mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
-    rack (2.2.3)
-    rack-protection (2.2.0)
-      rack
+    rack (3.0.10)
+    rack-protection (4.0.0)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
+    rackup (2.1.0)
+      rack (>= 3)
+      webrick (~> 1.8)
     ruby2_keywords (0.0.5)
-    sinatra (2.2.0)
-      mustermann (~> 1.0)
-      rack (~> 2.2)
-      rack-protection (= 2.2.0)
+    sinatra (4.0.0)
+      mustermann (~> 3.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.0.0)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    sinatra-contrib (2.2.0)
-      multi_json
-      mustermann (~> 1.0)
-      rack-protection (= 2.2.0)
-      sinatra (= 2.2.0)
+    sinatra-contrib (4.0.0)
+      multi_json (>= 0.0.2)
+      mustermann (~> 3.0)
+      rack-protection (= 4.0.0)
+      sinatra (= 4.0.0)
       tilt (~> 2.0)
-    tilt (2.0.10)
+    tilt (2.3.0)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  rackup (~> 2.1)
   sinatra
   sinatra-contrib
 
 RUBY VERSION
-   ruby 2.7.6
+   ruby 3.2.2p53
 
 BUNDLED WITH
-   2.0.1
+   2.4.10

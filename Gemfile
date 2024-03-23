@@ -1,5 +1,7 @@
-ruby '2.7.6'
+ruby '3.2.2'
 source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'sinatra-contrib'
+
+gem "rackup", "~> 2.1"
