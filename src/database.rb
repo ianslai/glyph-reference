@@ -160,7 +160,7 @@ SHAPE_TYPES = {
       [:consequence, :difficult, :intelligence, :technology,],
       [:nzeer, :perspective, :presence],
       [:separate, :destiny, :resistance, :struggle, ],
-      [:star],
+      [:star, :osiris,],
     ],
   },
 
@@ -183,7 +183,7 @@ SEGMENTS = {
         :liberate, :lie, :'live-again', :nature, :rebel, :resistance, :restraint, :together, :xm],
   6 => [:all, :collective, :harm, :journey, :nzeer, :separate, :shapers, :shield, :toast, :truth],
   7 => [:chaos, :contemplate, :enlightened, :enlightenment, :interrupt, :key, :perfection, :presence],
-  8 => [:"clear-all", :idea, :legacy, :peace, :perspective, :portal],
+  8 => [:"clear-all", :idea, :legacy, :osiris, :peace, :perspective, :portal],
   9 => [:"open-all"],
   10 => [:nemesis, :star, :unbounded],
 }

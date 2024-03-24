@@ -63,7 +63,7 @@ var GlyphRenderer = function() {
     // Draw lines between the points indexed by the indexes array
     var drawPolyline = function(svg, points, indexes, lineWidth) {
         var lineSettings = {
-            stroke: '#8080ff',
+            stroke: '#90d0d0',
             strokeWidth: lineWidth,
             fill: 'none',
             strokeLineCap: 'round',
@@ -87,8 +87,8 @@ var GlyphRenderer = function() {
     // Draw a mini-glyph, which consists of a bounding hexagon
     // and the glyph inside.
     var drawMiniGlyph = function(svg, height, indexes) {
-        var lineWidth = height * 0.07;
-        var outerLineSpacing = lineWidth * 1.5;
+        var lineWidth = height * 0.05;
+        var outerLineSpacing = lineWidth * 2;
         var padding = outerLineSpacing + lineWidth;
 
         var outerHexagonPoints = expandPoints(unitPoints, height, lineWidth / 2.0);

@@ -29,6 +29,9 @@ h1 {
 
 .glyph-name {
     font-variant: small-caps;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 115%;
 }
 
 a:link {
@@ -71,6 +74,19 @@ ul.phrases {
     padding: 5px;
 }
 
+body {
+    background-color: black;
+    color: #e0e0e0;
+}
+
+a {
+    color: #a0a0e0;
+}
+
+/*a:visited {
+    color: #c0a0e0;
+}
+*/
 /* Adjust content for mobile devices */
 @media only screen and (max-device-width: 480px) {
     body {
@@ -99,7 +115,7 @@ ul.phrases {
 @media only screen and (min-width : 1224px),
         only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-    /* Add fuzzy border and black background */
+    /* Add fuzzy border */
     #content {
         width: 600px;
         margin-left: auto;
@@ -107,12 +123,12 @@ ul.phrases {
         padding: 10px;
         padding-left: 20px;
         padding-right: 20px;
-        background-color: white;
-        box-shadow: 0px 0px 10px 10px white;
+        background-color: black;
+        box-shadow: 0px 0px 10px 10px black;
     }
 
     body {
-        background-color: black;
+        background-color: #200020;
         padding-top: 10px;
     }
 }

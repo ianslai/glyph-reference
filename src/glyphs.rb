@@ -100,6 +100,7 @@ GLYPHS = %{
   old
   open
   open-all
+  osiris
   outside
   past
   path
