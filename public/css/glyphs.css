@@ -11,11 +11,23 @@
     margin-right: auto;
 }
 
+.glyph.quiz {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
 .mini-glyph {
     width: 30px;
     height: 30px;
     display: inline-block;
     vertical-align: middle;
+}
+
+.hidden {
+    display: none;
 }
 
 body {
@@ -87,6 +99,42 @@ a {
     color: #c0a0e0;
 }
 */
+
+/* Quiz mode */
+#quiz-glyphs h1 {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+#quiz-actions {
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#quiz-bottom-margin {
+    /* Extra spacing to allow bottom of glyph list to be visible */
+    height: 300px;
+}
+
+button#randomize {
+    border: none;
+    color: #a0a0e0;
+    background-color: #202020;
+    padding: 15px 50px;
+    text-align: center;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 20px;
+    height: 75%;
+    cursor: pointer;
+}
+
 /* Adjust content for mobile devices */
 @media only screen and (max-device-width: 480px) {
     body {
@@ -130,5 +178,9 @@ a {
     body {
         background-color: #200020;
         padding-top: 10px;
+    }
+
+    #quiz-actions {
+        width: 600px;
     }
 }

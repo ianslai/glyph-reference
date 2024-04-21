@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+  <head>
+    <title>Quiz mode</title>
+    <%= erb :header %>
+    <script type="text/javascript" src="/js/quiz.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div id="quiz-glyphs">
+        <% @all_shapes.each do |shapes| %>
+          <h1 class="quiz-entry" id="glyph-shape-<%= shapes[0] %>">
+            <div class="glyph quiz" data-name="<%= shapes[0] %>"></div>
+            <span class="glyph-name concealed">
+              [ ? ? ? ]
+            </span>
+            <span class="glyph-name revealed hidden">
+              <% shapes.each_with_index do |sym, index|%>
+                <% if index > 0 %>
+                /
+                <% end %>
+                <% glyph = @glyph_map[sym] %>
+                <a href="/glyphs/<%= glyph.symbol %>">
+                    <%= glyph.title.upcase %>
+                </a>
+              <% end %>
+            </span>
+          </h1>
+        <% end %>
+      </div>
+      <div id="quiz-bottom-margin"></div>
+      <div id="quiz-actions">
+        <button id="randomize">RANDOMIZE</button>
+      </div>
+    </div>
+  </body>
+</html>

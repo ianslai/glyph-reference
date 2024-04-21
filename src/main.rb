@@ -73,3 +73,11 @@ get '/phrases/?' do
   @phrases = PHRASES_BY_LENGTH
   erb :phrases
 end
+
+get '/quiz/?' do
+  @glyph_map = GLYPHS.map{|sym| [sym, GlyphEntry.lookup(sym)]}.to_h
+  single_meaning_glyphs = (GLYPHS - HOMOGRAPHS.flatten()).map{|sym| [sym]}
+  homographs_sorted = HOMOGRAPHS.map {|graphs| graphs.sort()}
+  @all_shapes = (single_meaning_glyphs + homographs_sorted).sort()
+  erb :quiz
+end
