@@ -180,6 +180,11 @@ button#randomize {
         padding-top: 10px;
     }
 
+    .glyph.quiz {
+        width: 400px;
+        height: 400px;
+    }
+
     #quiz-actions {
         width: 600px;
     }

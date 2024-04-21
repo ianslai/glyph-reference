@@ -5,6 +5,7 @@ HOMOGRAPHS = [
   [:balance, :perfection],
   [:breathe, :live],
   [:collective, :shapers],
+  [:enlightened, :enlightenment],
   [:die, :death],
   [:evolution, :progress, :success],
   [:harmony, :peace],
