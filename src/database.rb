@@ -97,6 +97,7 @@ SHAPE_TYPES = {
       [:adapt, :save, :weak, :answer, :fear, :courage],
       [:danger, :question, :escape, :help, :intelligence],
       [:capture, :liberate, :lead, :'live-again'],
+      [:speed],
     ],
   },
 
@@ -148,7 +149,7 @@ SHAPE_TYPES = {
     :glyphs => [
       [:truth, :lie, :peace, :harmony],
       [:portal, :creativity, :idea, :thought],
-      [:nemesis],
+      [:nemesis, :refresh],
     ],
   },
 
@@ -182,11 +183,11 @@ SEGMENTS = {
         :potential, :pure, :react, :repair, :search, :share, :soul, :strong, :victory, :worth],
   5 => [:abandon, :after, :again, :before, :capture, :civilization, :conflict, :destiny, :end, :field, :human,
         :liberate, :lie, :'live-again', :nature, :rebel, :resistance, :restraint, :together, :xm],
-  6 => [:all, :collective, :harm, :journey, :nzeer, :separate, :shapers, :shield, :toast, :truth],
+  6 => [:all, :collective, :harm, :journey, :nzeer, :separate, :shapers, :shield, :speed, :toast, :truth],
   7 => [:chaos, :contemplate, :enlightened, :enlightenment, :interrupt, :key, :perfection, :presence],
   8 => [:"clear-all", :idea, :legacy, :osiris, :peace, :perspective, :portal],
   9 => [:"open-all"],
-  10 => [:nemesis, :star, :unbounded],
+  10 => [:nemesis, :refresh, :star, :unbounded],
 }
 
 # include homographs in segments listing

@@ -119,6 +119,7 @@ GLYPHS = %{
   rebel
   recharge
   reduce
+  refresh
   repair
   repeat
   resistance
@@ -135,6 +136,7 @@ GLYPHS = %{
   shield
   simple
   soul
+  speed
   stability
   star
   stay
