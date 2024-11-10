@@ -177,6 +177,7 @@ Gain
 Gain civilization peace
 Gain future escape
 Gain more knowledge
+Gain more speed
 Gain peace
 Gain portal attack weak
 Gain truth open human soul
@@ -278,6 +279,7 @@ Mind equal truth
 Mind open live
 Mind technology capture human soul
 More data gain portal advance
+More speed more potential
 Mystery before pure knowledge after
 Nature pure defend
 Nemesis
@@ -357,7 +359,9 @@ React rebel question shapers lie
 Rebel thought evolution destiny now
 Recharge
 Reduce
+Refresh change perspective
 Refresh mind refresh body
+Refresh nourish recharge
 Refresh old discover new
 Refresh technology gain more speed
 Repair
@@ -372,6 +376,7 @@ Restraint path, gain harmony
 Retreat search safety
 Safety
 Save
+Save before refresh
 Save human civilization destroy portal
 Search
 Search data discover path
@@ -416,6 +421,7 @@ Simple truth breathe nature
 Simple truth forget easy success
 Simple truth shapers destroy civilization
 Soul rebel human die
+Speed equal key
 Stay
 Stay strong together defend resistance
 Stay together defend truth
@@ -444,6 +450,7 @@ Use
 Use key together create star
 Use mind use courage change
 Use restraint follow easy path
+Use speed pure key
 Want new destination ignore consequence
 Want truth now
 Want truth pursue difficult path
