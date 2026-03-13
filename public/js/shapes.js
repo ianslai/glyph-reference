@@ -84,6 +84,7 @@ var Shapes = function() {
         'lie': [7, 6, 10, 8, 9, 10],
         'live': [1, 6, 10, 9, 5],
         'live-again': [2, 6, 7, 10, 9, 5],
+        'love': [5, 9, 10, 6, 1, 2, 3, 4, 5],
         'lose': [5, 8],
         'message': [2, 6, 10, 8, 5],
         'mind': [6, 7, 3, 10, 6],
@@ -170,8 +171,10 @@ var Shapes = function() {
         'recharge': 'repair',
         'repeat': 'again',
         'thought': 'idea',
+        'seek': 'search',
         'stability': 'stay',
         'struggle': 'resistance',
+        'toasty': 'toast',
         'war': 'attack',
         'we': 'us',
         'your': 'you'
