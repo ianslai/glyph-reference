@@ -227,7 +227,6 @@ SINGLETONS = [
   :me,
   :individual,
   :reduce,
-  :we,
 ]
 
 UNSEEN = [
