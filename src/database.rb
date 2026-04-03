@@ -17,6 +17,8 @@ HOMOGRAPHS = [
   [:repair, :recharge],
   [:repeat, :again],
   [:thought, :idea, :creativity],
+  [:toast, :toasty],
+  [:seek, :search],
   [:self, :individual],
   [:stability, :stay],
   [:struggle, :resistance],
@@ -77,7 +79,7 @@ SHAPE_TYPES = {
       [:accept, :after, :before, :open, :nourish, :repair, :recharge, :field],
       [:i, :me, :you, :your],
       [:mind, :body, :soul, :end],
-      [:strong, :victory, :knowledge, :human, :xm, :all, :shield, :toast],
+      [:strong, :victory, :knowledge, :human, :xm, :all, :shield, :toast, :toasty, :love],
     ],
   },
 
@@ -180,12 +182,12 @@ SEGMENTS = {
         :present, :pursue, :question, :safety, :save, :stay, :success, :want, :weak, :you],
   4 => [:attack, :avoid, :consequence, :create, :data, :defend, :destroy, :die, :difficult, :escape,
         :help, :hide, :impure, :knowledge, :lead, :live, :message, :mind, :nourish,
-        :potential, :pure, :react, :repair, :search, :share, :soul, :strong, :victory, :worth],
+        :potential, :pure, :react, :repair, :search, :seek, :share, :soul, :strong, :victory, :worth],
   5 => [:abandon, :after, :again, :before, :capture, :civilization, :conflict, :destiny, :end, :field, :human,
         :liberate, :lie, :'live-again', :nature, :rebel, :resistance, :restraint, :together, :xm],
-  6 => [:all, :collective, :harm, :journey, :nzeer, :separate, :shapers, :shield, :speed, :toast, :truth],
+  6 => [:all, :collective, :harm, :journey, :nzeer, :separate, :shapers, :shield, :speed, :toast, :toasty, :truth],
   7 => [:chaos, :contemplate, :enlightened, :enlightenment, :interrupt, :key, :perfection, :presence],
-  8 => [:"clear-all", :idea, :legacy, :osiris, :peace, :perspective, :portal],
+  8 => [:"clear-all", :idea, :legacy, :love, :osiris, :peace, :perspective, :portal],
   9 => [:"open-all"],
   10 => [:nemesis, :refresh, :star, :unbounded],
 }
@@ -225,13 +227,11 @@ SINGLETONS = [
   :me,
   :individual,
   :reduce,
-  :we,
 ]
 
 UNSEEN = [
   :i,
   :me,
-  :we,
 ]
 
 DISPLAY_NAMES = {

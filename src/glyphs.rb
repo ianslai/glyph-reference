@@ -85,6 +85,7 @@ GLYPHS = %{
   live
   live-again
   lose
+  love
   me
   message
   mind
@@ -129,6 +130,7 @@ GLYPHS = %{
   save
   search
   see
+  seek
   self
   separate
   shapers
@@ -147,6 +149,7 @@ GLYPHS = %{
   them
   thought
   toast
+  toasty
   together
   truth
   unbounded
