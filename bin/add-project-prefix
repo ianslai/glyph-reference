@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+set -eu
+
+find build -name '*.html' -exec sed -i '' -e 's_="/_="/glyph-reference/_g' {} \;
