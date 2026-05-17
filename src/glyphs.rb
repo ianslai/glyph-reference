@@ -145,6 +145,7 @@ GLYPHS = %{
   strong
   struggle
   success
+  sustain
   technology
   them
   thought

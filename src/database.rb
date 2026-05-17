@@ -45,6 +45,7 @@ ANTONYMS = [
   [:create, :destroy],
   [[:i, :me], :you],
   [:improve, :deteriorate],
+  [:interrupt, :sustain],
   [:easy, :difficult],
   [:grow, [:contract, :reduce]],
   [:outside, :inside],
@@ -160,7 +161,7 @@ SHAPE_TYPES = {
     :glyphs => [
       [:chaos, :journey, :hide, :legacy,],
       [:shapers, :collective, :civilization, :nature, :conflict,],
-      [:interrupt, :mystery,],
+      [:interrupt, :mystery, :sustain,],
       [:consequence, :difficult, :intelligence, :technology,],
       [:nzeer, :perspective, :presence],
       [:separate, :destiny, :resistance, :struggle, ],
@@ -187,7 +188,7 @@ SEGMENTS = {
         :liberate, :lie, :'live-again', :nature, :rebel, :resistance, :restraint, :together, :xm],
   6 => [:all, :collective, :harm, :journey, :nzeer, :separate, :shapers, :shield, :speed, :toast, :toasty, :truth],
   7 => [:chaos, :contemplate, :enlightened, :enlightenment, :interrupt, :key, :perfection, :presence],
-  8 => [:"clear-all", :idea, :legacy, :love, :osiris, :peace, :perspective, :portal],
+  8 => [:"clear-all", :idea, :legacy, :love, :osiris, :peace, :perspective, :portal, :sustain],
   9 => [:"open-all"],
   10 => [:nemesis, :refresh, :star, :unbounded],
 }
