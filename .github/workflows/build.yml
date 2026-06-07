@@ -34,8 +34,9 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Build static pages
       run: bin/static-build
-    - name: Add project URL prefix
-      run: bin/add-project-prefix
+    # No longer necessary when pointed directly from glyph.somerian.net
+    # - name: Add project URL prefix
+    #   run: bin/add-project-prefix
     - name: Upload static files as artifact
       id: deployment
       uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
