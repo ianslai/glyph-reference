@@ -6,6 +6,6 @@ gem 'sinatra-contrib'
 
 gem "rackup", "~> 2.1"
 
-gem "puma", "~> 6.4"
+gem "puma", "~> 7.2"
 
 gem 'parklife'
