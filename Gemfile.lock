@@ -7,7 +7,7 @@ GEM
     multi_json (1.15.0)
     mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.7.3)
+    nio4r (2.7.5)
     nokogiri (1.19.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -15,7 +15,7 @@ GEM
       nokogiri
       rack-test
       thor
-    puma (6.4.3)
+    puma (7.2.1)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.6)
@@ -54,7 +54,7 @@ PLATFORMS
 
 DEPENDENCIES
   parklife
-  puma (~> 6.4)
+  puma (~> 7.2)
   rackup (~> 2.1)
   sinatra
   sinatra-contrib
